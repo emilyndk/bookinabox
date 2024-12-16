@@ -1,0 +1,44 @@
+---
+// Props defineres her
+const {
+  imageSrc = "",
+  imageAlt = "",
+  role = "",
+  name = "",
+  answers = [],
+} = Astro.props;
+---
+<section class="grid grid-cols-grid-mobil mx-margin-mobil gap-x-gap-mobil">
+  <p class="font-lemondejournal text-p-mobil text-forrest-500 col-span-4 pt-m">
+    {role}
+  </p>
+  <h4 class="font-lemondejournal text-h4-mobil text-forrest-500 col-span-4 break-before-avoid">
+    {name}
+  </h4>
+  
+  <!-- Container for rammen -->
+  <div class="col-span-4 relative">
+    <div class="bg-[url('/img/frame.svg')] bg-no-repeat bg-center bg-contain w-full h-0 pb-[100%] mb-xs">
+      <div class="absolute inset-0 flex items-center justify-center p-4">
+        <img 
+          class="max-w-[90%] max-h-[90%] object-contain" 
+          src={imageSrc} 
+          alt={imageAlt}>
+      </div>
+    </div>
+  </div>
+
+  {answers.map(({ question, answer }) => (
+    <>
+      <div class="col-span-4 border-l w-full h-full border-forrest-500 pl-s">
+  <h5 class="font-lemondejournal text-h5-mobil text-forrest-500 break-before-avoid">
+    {question}
+  </h5>
+  <p class="font-lemondejournal text-forrest-500 text-p-mobil pb-xs">
+    {answer}
+  </p>
+</div>
+
+    </>
+  ))}
+</section>
