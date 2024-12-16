@@ -41,6 +41,10 @@ export default {
         
       },
 
+      fontFamily:{
+        all:['lemondejournal', 'serif'],
+      },
+
       fontWeight:{
          regular:'400',
          semibold:'600',
