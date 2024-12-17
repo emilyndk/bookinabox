@@ -1,0 +1,180 @@
+---
+import MainLayout from "../layouts/MainLayout.astro"
+
+import Question from "../components/Question.astro";
+
+const teamMembers = [
+  {
+    imageSrc: "/public/img/cecilie.png",
+    imageAlt: "Cecilie",
+    role: "Stifter af Book in a Box",
+    name: "Cecilie Rosenlyst Skov",
+    answers: [
+      { question: "Er du mest til film, bog eller lydbog?", answer: "“Bog!”" },
+      { question: "Hvilken fiktiv verden ville du helst bo i?", answer: "“Hobbitton i Middle-earth.”" },
+      { question: "Hvad er din værste læsevane?", answer: "“Jeg læser næsten altid den sidste sætning i en bog, inden jeg begynder den..”" },
+      { question: "Hvad er din yndlingsgenre?", answer: "“Fantasy.”" },
+    ],
+  },
+  {
+    imageSrc: "/public/img/alexander.png",
+    imageAlt: "Alexander",
+    role: "Partner / Strategi",
+    name: "Alexander Overgaard",
+    answers: [
+      { question: "Er du mest til film, bog eller lydbog?", answer: "“Bog, men ser langt flere film.”" },
+      { question: "Hvilken fiktiv verden ville du helst bo i?", answer: "“Jeg vil gerne besøge de fleste, men kun midlertidigt. Generelt er de alt for farlige til at ville bo der.”" },
+      { question: "Hvad er din værste læsevane?", answer: "“Jeg er slet ikke god ved mine bøger. De får æselører, kuglepensstreger, knækket ryggen og det sker også, at de bliver brugt som tallerken.”" },
+      { question: "Hvad er din yndlingsgenre?", answer: "“Klassikere.”" },
+    ],
+  },
+  {
+    imageSrc: "/public/img/jacob.png",
+    imageAlt: "Jacob",
+    role: "Pattern / Teknik",
+    name: "Jacob Juul",
+    answers: [
+      { question: "Er du mest til film, bog eller lydbog?", answer: "“Film!”" },
+      { question: "Hvilken fiktiv verden ville du helst bo i?", answer: "“En post-apokalyptisk verden (Men kun for en dag eller to!).”" },
+      { question: "Hvad er din værste læsevane?", answer: "“Aldrig at læse en bog færdig.”" },
+      { question: "Hvad er din yndlingsgenre?", answer: "“Thrillere og gysere.”" },
+    ],
+  },
+];
+---
+
+<MainLayout title="Om os"></MainLayout>
+
+<!-- overskrift -->
+
+<section class="text-forrest-500 font-lemondejournal grid grid-cols-grid-mobil mx-margin-mobil gap-x-gap-mobil lg:grid-cols-grid-desktop lg:mx-margin-desktop lg:gap-x-gap-desktop">
+<div class="col-start-1 col-span-4 lg:col-span-12 lg:pb-m">
+<p class="font-lemondejournal text-p-mobil text-forrest-500 col-span-4 lg:text-p-desktop lg:col-span-12">Vores Historie</p>
+<h1 class="font-lemondejournal text-h1-mobil text-forrest-500 col-span-4 break-all lg:text-h1-desktop lg:col-span-12">Virksomheden</h1>
+</div>
+
+<div class="col-start-1 col-span-4 lg:col-start-5 lg:col-span-7 lg:row-start-2 lg:pt-xxs">
+<h4 class="font-lemondejournal text-h4-mobil text-forrest-500 col-span-4 lg:text-h4-desktop lg:col-start-6 lg:pb-xs">Kære Læser</h4>
+<p class="font-lemondejournal text-p-mobil text-forrest-500 col-span-4 lg:text-h6-desktop lg:col-start-6 lg:col-span-7">Drømmen om at starte Book in a Box kom oprindeligt til mig, da jeg gennem flere år havde sukket efter de udenlandske bogbokse, der altid indeholdt smukke fantasyromaner og gaver og havde et inkluderende læsefællesskab. Desværre satte de høje fragt- og toldpriser en barriere for selv at abonnere på dem. I 2022 smurte jeg derfor ærmerne op og planlagde en bogboks baseret i Danmark. Efter en god portion research blev Book in Box født i 2023 og lancerede i maj den første boks med Rebecca Yarros’ roman Fourth Wing. <br><br>
+
+    Takket være den overvældende støtte fra jer fantastiske medlemmer og det vidunderlige bog-fællesskab er Book in a Box vokset ud af det lille skur hjemme hos min mor, som jeg startede i. I 2024 har jeg kæmpet for, at Book in a Box kan tilbyde eksklusive udgaver af bøger i samarbejde med nogle af verdens største forlag og dygtige kunstnere, og det håber jeg, vi kan få lov til at lave meget mere af. Jeg er utrolig spændt på at se, hvad fremtiden bringer! <br> <br>
+    
+    Jeg ville ikke have haft mulighed for at arbejde med det, jeg og Book in a Box teamet elsker og brænder for, uden jer. En stor tak til dig, der har støttet med køb, delinger, billeder, kommentarer og anbefalinger. Uanset om du har været med fra begyndelsen eller først lige har opdaget os: TAK! Jeg ser frem til fortsat at bringe jer gode bøger og boglige goodies og fortsætte med at dele kærligheden til bøger med andre læsere rundt om i verden! <br> <br>
+    
+    De største kram</p> 
+<img class="col-start-1 col-span-2 py-xs lg:col-start-5 lg:w-1/4" src="/public/img/name.svg" alt="cecilie">  
+ <img class="col-start-1 col-span-4 lg:col-start-5 lg:col-span-6 lg:w-full lg:pt-m" src="/public/svg/bogklub.svg" alt="">
+</div>
+
+
+
+
+<!-- Opdeler streg -->
+
+    <div class="col-start-1 col-span-3 flex place-items-center lg:col-span-8 lg:row-start-5">
+  
+    <div class=" h-[1px] w-full bg-forrest-500 ">
+
+    </div>
+
+    </div>
+
+    <div class="col-start-4 lg:col-start-9 lg:row-start-5 lg:col-span-5">
+
+    <img class="col-start-4 lg:col-start-9 lg:row-span-3" src="/public/img/branch-down.svg" alt="blomster gren">
+    </div>
+
+
+<div class="col-start-2 col-span-2 lg:col-start-2 lg:row-start-2">
+
+<div class="col-start-2 col-span-2 text-center lg:col-start-2 lg:row-start-2">
+<p class="text-p-mobil col-start-2 col-span-2 pt-xs">November</p>
+<h3 class="text-h3-mobil col-start-2 col-span-2">2022</h3>
+<img class="col-start-2 col-span-2" src="/public/img/prototype.webp" alt="prototype">
+<h5 class="text-h5-mobil col-start-2 col-span-2 ">Tidlig prototype</h5>
+</div>
+<p class=" text-p-mobil col-span-4 lg:col-start-2 ">Vores første prototype der blev sendt til feedback ved Bogfeber i 2022</p>
+
+<div class="col-start-2 col-span-2 text-center lg:col-start-2 lg:row-start-3">
+<p class="text-p-mobil col-start-2 col-span-2 pt-xs">Maj</p>
+<h3 class="text-h3-mobil col-start-2 col-span-2">2023</h3>
+<img class="col-start-2 col-span-2" src="/public/img/image 4.webp" alt="første forsendelse">
+<h5 class="text-h5-mobil col-start-2 col-span-2 ">Den første boks</h5>
+</div>
+
+<p class=" text-p-mobil col-span-4 text-center lg:col-start-2 ">Den første boks blev sendt ud i maj 2023 med Rebecca Yarros’ “Fourth Wing.”</p>
+
+<div class="col-start-2 col-span-2 text-center">
+<p class="text-p-mobil col-start-2 col-span-2 pt-xs">November</p>
+<h3 class="text-h3-mobil col-start-2 col-span-2">2023</h3>
+<img class="col-start-2 col-span-2" src="/public/img/image 3.webp" alt="">
+<h5 class="text-h5-mobil col-start-2 col-span-2 ">Tur til bogforum</h5>
+</div>
+
+<p class=" text-p-mobil col-span-4 text-center ">I november 2023 pakkede vi, med hjælp fra familien, for første gang bilen og drog mod Bogforum</p>
+
+<div class="col-start-2 col-span-2 text-center">
+<p class="text-p-mobil col-start-2 col-span-2 pt-xs">Januar</p>
+<h3 class="text-h3-mobil col-start-2 col-span-2">2024</h3>
+<img class="col-start-2 col-span-2" src="/public/img/image 2.webp" alt="samarbejde">
+<h5 class="text-h5-mobil col-start-2 col-span-2 ">Fejring af partnerskab</h5>
+</div>
+
+<p class=" text-p-mobil col-span-4 text-center ">I januar 2024 kom Jacob og Alexander ind i Book in a Box og den lille virksomhed voksede fra én til tre!</p>
+
+<div class="col-start-2 col-span-2 text-center">
+<p class="text-p-mobil col-start-2 col-span-2 pt-xs">Juni</p>
+<h3 class="text-h3-mobil col-start-2 col-span-2">2024</h3>
+<img class="col-start-2 col-span-2" src="/public/img/image 1.webp" alt="prototype">
+<h5 class="text-h5-mobil col-start-2 col-span-2 ">Best Startup Award</h5>
+</div>
+
+<p class=" text-p-mobil col-span-4 text-center ">I en pitchkonkurrence vand Book in a Box prisen som SDU’s “Best Startup 2024” - en meget stor, rørende og uforglemmelig dag!</p>
+</div>
+
+</section>
+
+
+<!-- Tidslinje -->
+
+<!-- Opdeler streg -->
+
+<section class="grid grid-cols-grid-mobil gap-x-gap-mobil ">
+
+
+    <div class="col-start-1">
+    
+        <img class="col-start-1" src="/public/img/singlebranch-up.svg" alt="">
+        </div>
+
+   
+    <div class="col-start-2 col-span-3 flex place-items-center">
+  
+        <div class=" h-[1px] w-full bg-forrest-500 ">
+    
+        </div>
+    
+        </div>
+    
+
+</section>
+
+
+<section class="team-section">
+    {teamMembers.map((member) => (
+      <Question 
+        imageSrc={member.imageSrc}
+        imageAlt={member.imageAlt}
+        role={member.role}
+        name={member.name}
+        answers={member.answers}
+      />
+    ))}
+  </section>
+  
+  
+
+ 
+  
+
+  
