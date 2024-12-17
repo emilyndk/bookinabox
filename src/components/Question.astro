@@ -8,16 +8,16 @@ const {
   answers = [],
 } = Astro.props;
 ---
-<section class="grid grid-cols-grid-mobil mx-margin-mobil gap-x-gap-mobil">
-  <p class="font-lemondejournal text-p-mobil text-forrest-500 col-span-4 pt-m">
+<section class="grid grid-cols-grid-mobil mx-margin-mobil gap-x-gap-mobil lg:grid-cols-grid-desktop lg:mx-margin-desktop lg:gap-x-gap-desktop lg:hidden">
+  <p class="font-lemondejournal text-p-mobil text-forrest-500 col-span-4 pt-m lg:col-start-1">
     {role}
   </p>
-  <h4 class="font-lemondejournal text-h4-mobil text-forrest-500 col-span-4 break-before-avoid">
+  <h4 class="font-lemondejournal text-h4-mobil text-forrest-500 col-span-4 break-before-avoid lg:col-start-1">
     {name}
   </h4>
   
   <!-- Container for rammen -->
-  <div class="col-span-4 relative">
+  <div class="col-span-4 relative lg:col-start-1 lg:col-span-4">
     <div class="bg-[url('/img/frame.svg')] bg-no-repeat bg-center bg-contain w-full h-0 pb-[100%] mb-xs">
       <div class="absolute inset-0 flex items-center justify-center pb-4">
         <img 
@@ -30,15 +30,71 @@ const {
 
   {answers.map(({ question, answer }) => (
     <>
-      <div class="col-span-4 border-l w-full h-full border-forrest-500 pl-s">
+      <div class="col-span-4 border-l w-full h-full border-forrest-500 pl-s lg:col-start-5">
   <h5 class="font-lemondejournal text-h5-mobil text-forrest-500 break-before-avoid">
     {question}
   </h5>
-  <p class="font-lemondejournal text-forrest-500 text-p-mobil pb-xs">
+  <p class="font-lemondejournal text-forrest-500 text-p-mobil pb-xs lg:col-start-5 lg:pb-0">
     {answer}
   </p>
 </div>
 
     </>
   ))}
+</section>
+
+<section class="lg:grid-cols-grid-desktop lg:mx-margin-desktop lg:gap-x-gap-desktop">
+   
+
+    <div class="lg:col-start-1 lg:col-span-12">
+    <p class="font-lemondejournal text-p-desktop text-forrest-500 lg:text-p-desktop lg:col-start-1 lg:col-span-12">{role}
+    </p>
+    <h4 class="font-lemondejournal text-h4-desktop text-forrest-500 lg:col-start-1">{name}
+    </h4>
+    </div>
+
+     <!-- Container for rammen -->
+  <div class="relative lg:col-start-1 lg:col-span-5">
+    <div class="bg-[url('/img/frame.svg')] bg-no-repeat bg-contain w-[30%] h-0 pb-[30%] mb-xs">
+      <div class="absolute inset-0 flex items-center justify-start pl-7 pb-4">
+        <img 
+          class="max-w-[90%] max-h-[90%] object-contain" 
+          src={imageSrc} 
+          alt={imageAlt}>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <div class="lg:col-start-5 lg:col-span-2">
+        {answers.map(({ question, answer }) => (
+        <>
+          <div class="border-l w-full h-full border-forrest-500 pl-s ">
+      <h5 class="font-lemondejournal text-h5-desktop text-forrest-500 break-before-avoid">
+        {question}
+      </h5>
+      <p class="font-lemondejournal text-forrest-500 text-p-desktop pb-xs">
+        {answer}
+      </p>
+    </div>
+    
+        </>
+      ))}
+    </div>
+    <div class="lg:col-start-5 lg:col-span-12">
+        {answers.map(({ question, answer }) => (
+        <>
+          <div class="col-span-4 border-l w-full h-full border-forrest-500 pl-s lg:col-start-5">
+      <h5 class="font-lemondejournal text-h5-mobil text-forrest-500 break-before-avoid">
+        {question}
+      </h5>
+      <p class="font-lemondejournal text-forrest-500 text-p-mobil pb-xs lg:col-start-5 lg:pb-0">
+        {answer}
+      </p>
+    </div>
+    
+        </>
+      ))}
+    </div>
+  </div>
 </section>
