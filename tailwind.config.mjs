@@ -117,7 +117,7 @@ gap:{
 
                  cherry: {
                       
-                    500: '#fbacbe',
+                    500: '#FBACBE',
                   
                  },
 
