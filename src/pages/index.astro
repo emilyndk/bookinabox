@@ -5,35 +5,81 @@ import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
+
 <MainLayout title="Book in a Box">
-	<section id="hero" class="
-	bg-forrest-500 h-screen">
+  
+    
+    <!-- Background Image -->
+    <section id="hero-m" class="lg:hidden absolute inset-0 bg-[url('/svg/hero-blomster-samlet.svg')] bg-cover bg-center z-0 bg-forrest-500">
+      
+      <!-- Main Content -->
+      <section class=" grid grid-cols-grid-mobil  mx-margin-mobil gap-gap-mobil  font-lemondejournal">
+        
+        <!-- Hero Heading -->
+        <div class="mt-m flex col-span-4">
+          <h1 class="self-center text-center text-h1-mobil text-sage-500 ">
+            Book in a Box
+          </h1>
+        </div>
 
-	<section class=" grid grid-cols-grid-mobil lg:grid-cols-grid-desktop mx-margin-mobil lg:mx-margin-desktop gap-gap-mobil lg:gap-gap-desktop font-lemondejournal">
+        <!-- Subtitle -->
+        <p class="mb-s text-p-mobil mx-7 col-start-1 col-span-4 text-sage-200  text-center">
+          Din abonnementsløsning for udvalgt fantasy spænding hver anden måned. Nøje udvalgt af vores redaktion.
+        </p>
 
-<div class="flex col-span-4">
-<h1 class=" self-center text-center text-h1-mobil text-sage-500 lg:text-h1-display-desktop ">
-Book in a Box</h1>
-</div>
+        <!-- Buttons -->
+        <button class="col-start-2 col-span-2 text-center bg-maroon-500 h-12">h</button>
+        <Button>Hej</Button>
+
+        <!-- Scroll Info -->
+        <div class="mt-s flex flex-col col-span-4 col-start-1 align-bottom">
+          <div class="flex items-center justify-center gap-2">
+            <p class="text-p-mobil text-center text-sage-200 lg:text-p-desktop opacity-50">
+              Scroll for yderligere info
+            </p>
+            <img src="/svg/arrow-m.svg" alt="Pil ned">
+          </div>
+        </div>
+
+      </section>
+    </section>
 
 
 
-<p class="text-p-mobil mx-7 col-start-1 col-span-4 text-sage-200 lg:text-p-desktop text-center break-all">
-	Lorem ipsum dolor sit amet consectetur. Felis auctor at adipiscing dignissim nibh?
-</p>
 
-<button class="col-start-2 col-span-2 text-center bg-maroon-500 h-12">h</button>
-
-<div class="flex flex-col col-span-4 col-start-1 align-bottom">
-<div class=" flex  items-center justify-center gap-2">
-<p class="text-p-mobil  text-center text-sage-200 lg:text-p-desktop  opacity-50">
-	Scroll for yderligere info
-</p>
-<img src="/svg/arrow-m.svg" alt="Pil ned">
-</div>
-</div>
-
-</section>
-
-	</section>
+	  <!-- Background Image -->
+	  <section id="hero-d" class=" hidden lg:block absolute inset-0 bg-[url('/svg/hero-blomster-samlet-d.svg')] bg-no-repeat bg-cover w-screen z-0 bg-forrest-500">
+      
+		<!-- Main Content -->
+		<section class=" grid grid-cols-grid-desktop  mx-margin-desktop gap-gap-desktop font-lemondejournal">
+		  
+		  <!-- Hero Heading -->
+		  <div class="mt-m flex col-span-4">
+			<h1 class="self-center text-center text-h1-mobil text-sage-500 lg:text-h1-display-desktop">
+			  Book in a Box
+			</h1>
+		  </div>
+  
+		  <!-- Subtitle -->
+		  <p class="mb-s text-p-mobil mx-7 col-start-1 col-span-4 text-sage-200 lg:text-p-desktop text-center">
+			Din abonnementsløsning for udvalgt fantasy spænding hver anden måned. Nøje udvalgt af vores redaktion.
+		  </p>
+  
+		  <!-- Buttons -->
+		  <button class="col-start-2 col-span-2 text-center bg-maroon-500 h-12">h</button>
+		  <Button>Hej</Button>
+  
+		  <!-- Scroll Info -->
+		  <div class="mt-s flex flex-col col-span-4 col-start-1 align-bottom">
+			<div class="flex items-center justify-center gap-2">
+			  <p class="text-p-mobil text-center text-sage-200 lg:text-p-desktop opacity-50">
+				Scroll for yderligere info
+			  </p>
+			  <img src="/svg/arrow-m.svg" alt="Pil ned">
+			</div>
+		  </div>
+  
+		</section>
+	  </section>
+  
 </MainLayout>
