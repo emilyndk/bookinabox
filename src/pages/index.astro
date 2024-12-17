@@ -9,8 +9,8 @@ import thumbsup from "../assets/images/thumbsup.png";
 <MainLayout title="Book in a Box">
   
     
-    <!-- Background Image -->
-    <section id="hero-m" class="lg:hidden absolute inset-0 bg-[url('/svg/hero-blomster-samlet.svg')] bg-cover bg-center z-0 bg-forrest-500">
+    <!-- hero mobil -->
+    <section id="hero-m" class="h-screen lg:hidden inset-0 bg-[url('/svg/hero-blomster-samlet.svg')] bg-cover bg-center z-0 bg-forrest-500">
       
       <!-- Main Content -->
       <section class=" grid grid-cols-grid-mobil  mx-margin-mobil gap-gap-mobil  font-lemondejournal">
@@ -44,42 +44,64 @@ import thumbsup from "../assets/images/thumbsup.png";
       </section>
     </section>
 
-
-
-
-	  <!-- Background Image -->
-	  <section id="hero-d" class=" hidden lg:block absolute inset-0 bg-[url('/svg/hero-blomster-samlet-d.svg')] bg-no-repeat bg-cover w-screen z-0 bg-forrest-500">
+	  <!-- hero desk -->
+	<section id="hero-d" class="h-screen hidden lg:block  inset-0 bg-[url('/svg/hero-blomster-samlet-d.svg')] bg-no-repeat bg-cover w-screen z-0 bg-forrest-500">
       
+
+
+<img class="absolute right-0 top-[40%]" src="/svg/papirblomster-r.svg" alt="Blomster illustration">   
+<img class="absolute left-10 bottom-10" src="/svg/papirblomster-lb.svg" alt="Blomster illustration">
+<img class="absolute left-10 top-10" src="/svg/papirblomster-lt.svg" alt="Blomster illustration"> 
+<img class="absolute right-0 top-20" src="/svg/birdfill-maroon.svg" alt="Fugl illustration">           
 		<!-- Main Content -->
-		<section class=" grid grid-cols-grid-desktop  mx-margin-desktop gap-gap-desktop font-lemondejournal">
+		<section class=" grid grid-cols-grid-desktop  mx-margin-desktop gap-gap-desktop  font-lemondejournal">
+
+    <div class="absolute"><button class="bg-maroon-400">hej</button></div>
 		  
 		  <!-- Hero Heading -->
-		  <div class="mt-m flex col-span-4">
-			<h1 class="self-center text-center text-h1-mobil text-sage-500 lg:text-h1-display-desktop">
-			  Book in a Box
+		<div class="mt-[10rem] flex flex-col justify-center mb-s col-span-8 col-start-3 gap-s items-center ">
+      
+			<h1 class="self-center text-center text-h1-display-desktop text-sage-500 lg:text-h1-display-desktop">
+			  Book in <br>a Box
 			</h1>
-		  </div>
+		  
   
 		  <!-- Subtitle -->
-		  <p class="mb-s text-p-mobil mx-7 col-start-1 col-span-4 text-sage-200 lg:text-p-desktop text-center">
-			Din abonnementsløsning for udvalgt fantasy spænding hver anden måned. Nøje udvalgt af vores redaktion.
+       
+		  <p class="text-h6-desktop  self-center text-sage-200 text-center ">
+			Din abonnementsløsning for udvalgt fantasy <br> spænding hver anden måned. Nøje udvalgt af <br> vores redaktion.
 		  </p>
-  
-		  <!-- Buttons -->
+
+      	  <!-- Buttons -->
 		  <button class="col-start-2 col-span-2 text-center bg-maroon-500 h-12">h</button>
-		  <Button>Hej</Button>
+		  
   
 		  <!-- Scroll Info -->
-		  <div class="mt-s flex flex-col col-span-4 col-start-1 align-bottom">
-			<div class="flex items-center justify-center gap-2">
+		 
+			<div class="flex flex-row gap-xxs">
 			  <p class="text-p-mobil text-center text-sage-200 lg:text-p-desktop opacity-50">
 				Scroll for yderligere info
 			  </p>
 			  <img src="/svg/arrow-m.svg" alt="Pil ned">
-			</div>
-		  </div>
+      </div>
+			
+    
+  </div>
+  
+	
   
 		</section>
 	  </section>
+
+     <!-- konceptet horizontal scroll -->
+
+    <section id="konceptet" class=" grid grid-cols-grid-mobil lg:grid-cols-grid-desktop  mx-margin-mobil lg:mx-margin-desktop gap-gap-mobil lg:gap-gap-desktop font-lemondejournal">
+hej
+      <div class="col-start-1 col-span-4 lg:col-span-12 lg:pb-m">
+        <p class="font-lemondejournal text-p-mobil text-forrest-500 col-span-4 lg:text-p-desktop lg:col-span-12">Vores Historie</p>
+        <h1 class="font-lemondejournal text-h1-mobil text-forrest-500 col-span-4 break-all lg:text-h1-desktop lg:col-span-12">Virksomheden</h1>
+        </div>
+
+    </section>
   
 </MainLayout>
