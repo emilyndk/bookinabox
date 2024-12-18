@@ -29,7 +29,7 @@ import Card from "../components/Card.astro";
 
       <!-- Button -->
       <button class="col-start-2 col-span-2 text-center bg-maroon-500 h-12">h</button>
-      <Button>Hej</Button>
+      <Button input ="Tilmeld"></Button>
 
       <!-- Scroll Info -->
       <div class="mt-s flex flex-col col-span-4 col-start-1 align-bottom">
@@ -53,7 +53,7 @@ import Card from "../components/Card.astro";
     <!-- Main Content -->
     <section class="grid grid-cols-grid-desktop mx-margin-desktop gap-gap-desktop font-lemondejournal">
       <div class="absolute right-10">
-        <Button variant="secondary"></Button>
+        <Button input="Tilmeld" variant="secondary"></Button>
       </div>
 
       <!-- Hero Heading -->
@@ -68,7 +68,7 @@ import Card from "../components/Card.astro";
         </p>
 
         <!-- Buttons -->
-      <Button variant="secondary"></Button>
+      <Button input="Tilmeld" variant="secondary"></Button>
 
         <!-- Scroll Info -->
         <div class="flex flex-row gap-xxs">
@@ -94,7 +94,7 @@ import Card from "../components/Card.astro";
     <div class="col-start-1  col-span-full ">
       
       <!-- trin 1 -->
-      <section id="trin-1" class="h-screen flex flex-col  ">
+      <section id="trin-1" class=" flex flex-col  ">
         
         <img class="w-48" src="/svg/typewriter.svg" alt="Skrivemaskine illustration">
         <div class="border-l border-forrest-500 pl-s ">
@@ -115,13 +115,13 @@ import Card from "../components/Card.astro";
         </p>
         <img class="relative -bottom-16" src="/svg/singlebranch2.svg" alt="Gren">
       </div>
-        <img class="w-1/2 " src="/svg/udvalg.svg" alt="Pige udvalger en bog illustration">
+       
     </section>
 
      
 
       <!-- trin 3 -->
-      <section id="trin-3" class=" h-screen ">
+      <section id="trin-3" class=" ">
         <div class="flex">
          <div class="flex flex-col items-center justify-center">
            <img class="" src="/svg/owl.svg" alt="Ugle med gave illustration">
@@ -132,7 +132,7 @@ import Card from "../components/Card.astro";
         </div>
       </div>
      
-        <img src="/svg/singlebranch3.svg" alt="Gren">
+       
       </div>
     </section>
 
@@ -235,9 +235,13 @@ import Card from "../components/Card.astro";
     <p class=" font-lemondejournal text-p-mobil text-forrest-500 col-span-4 ">“Jeg har netop modtaget min første boks og jeg er virkelig imponeret. Bogen er super flot og i fantastisk kvalitet og ideen med de små gaver, som skal åbnes på specifikke tidpunkter i bogen er virkelig sjov. Jeg glæder mig meget til at læse bogen og åbne gaverne.”</p>
     <h5 class="col-start-2  text-right col-span-full  text-h5-mobil  text-forrest-500">Camilla Lysgaard Jensen</h5>
 
+
+
+    
     <div class="col-start-1 col-span-2 flex flex-col justify-center items-start">
       <p class="text-p-mobil text-forrest-500">Hvad synes du?</p>
-      <button class="text-center">Giv din mening</button>
+      
+      <Button input="Giv din mening"></Button>
       <img class=" col-start-1 lg:col-start-1  lg:col-span-3 lg:w-full row-start-3 relative -left-7 lg:left-[-100px]" src="/svg/singlebranch.svg" alt="blomster gren">
     </div>
   
@@ -257,23 +261,90 @@ import Card from "../components/Card.astro";
    </div>
 
    <div class="flex col-start-2  col-span-full items-center justify-between gap-[300px]">
- <div class="">
-     <p class="pl-s lg:border-l border-forrest-500 font-lemondejournal  text-forrest-500  text-p-desktop">“Jeg har netop modtaget min første boks og jeg er virkelig imponeret. Bogen er super flot og i fantastisk kvalitet og ideen med de små gaver, som skal åbnes på specifikke tidpunkter i bogen er virkelig sjov. Jeg glæder mig meget til at læse bogen og åbne gaverne.”</p>
-     <h5 class=" text-right col-span-full col-start-1 text-h5-desktop text-forrest-500">Camilla Lysgaard <br> Jensen</h5>
+ <div id="testimonial-container" class="">
+     <p id="testimonial-p" class="pl-s lg:border-l border-forrest-500 font-lemondejournal  text-forrest-500  text-p-desktop">“Jeg har netop modtaget min første boks og jeg er virkelig imponeret. Bogen er super flot og i fantastisk kvalitet og ideen med de små gaver, som skal åbnes på specifikke tidpunkter i bogen er virkelig sjov. Jeg glæder mig meget til at læse bogen og åbne gaverne.”</p>
+     <h5 id="testimonial-forfatter" class=" text-right col-span-full col-start-1 text-h5-desktop text-forrest-500">Camilla Lysgaard <br> Jensen</h5>
     </div>
      <img class="col-start-11 row-start-3" src="/svg/prinsesse.svg " alt="">
-    
     </div>
+
+    
+</div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+  const testimonials = [
+    {
+      heading: "Astrid Dybkjær",
+      text: '"Bestilte November 2023 boksen, et bogmærke og Marts 2024 boksen. Der var hurtig og god levering. Der er høj kvalitet på alle gaverne, som har en rigtig fin indpakning. Det er et super hyggeligt koncept, og jeg nyder allerede min bog og bogmærke. Ville både anbefale og handle Majboksen."',
+    },
+    {
+      heading: "Amalie",
+      text: '"Jeg elsker det her koncept. Det er min første bookinabox men bestemt ikke den sidste. Læsning bliver mere end bare læsningen i sig selv, det bliver en oplevelse"',
+    },
+    {
+      heading: "Sara",
+      text: '"Jeg elsker overraskelser og engelske bøger, så Book in a box er PERFEKT! Det er skønt at kunne følge med på instagram også. De sidste to bøger har været mere ovre i YA, hvor jeg selv er mere til NA. De var dog stadig det værd."',
+    },
+
+    {
+      heading: "Emilie",
+      text: '"Fedt koncept, og virkelig informeret ejer, som bare ved hvilke bøger der hitter! Kæmpe fan"' },
+  ];
+
+  let currentIndex = 0; // Start med det første testimonial
+  const forfatterElement = document.getElementById("testimonial-forfatter");
+  const pElement = document.getElementById("testimonial-p");
+  const container = document.getElementById("testimonial-container");
+
+  function updateTestimonial() {
+    // Skjul container for glidende overgang
+    container.classList.add("opacity-0");
+
+    setTimeout(() => {
+      // Skift tekst og overskrift
+      const testimonial = testimonials[currentIndex];
+      forfatterElement.textContent = testimonial.heading;
+      pElement.textContent = testimonial.text;
+
+      // Vis container igen
+      container.classList.remove("opacity-0");
+
+      
+
+      // Opdater indeks
+      currentIndex = (currentIndex + 1) % testimonials.length;
+    }, 500); // Vent, indtil transitionen er færdig (0.5s)
+  }
+
+  // Skift testimonial hvert 10. sekund
+  setInterval(updateTestimonial, 10000);
+});
+
+    </script>
+<style>
+  </style>    
 
 <div class="col-start-1 col-span-2 flex flex-col justify-center items-start">
   <p class="text-p-desktop text-forrest-500">Hvad synes du?</p>
-  <button class="text-center">Giv din mening</button>
-  <img class=" col-start-1 lg:col-start-1  lg:col-span-3 lg:w-full row-start-3 relative -left-7 lg:left-[-100px]" src="/svg/singlebranch.svg" alt="blomster gren">
+ <Button input="Giv din mening"></Button>
+  <img class="lg:hidden col-start-1 lg:col-start-1  lg:col-span-3 lg:w-full row-start-3 relative -left-7 lg:left-[-100px]" src="/svg/singlebranch.svg" alt="blomster gren">
 </div>
 
 
 
+
+
+
+
    </section>
+
+   <div class="hidden lg:grid grid-cols-4 row-start-4  col-start-1     ">
+    <img class=" col-start-1 row-start-1 col-span-2  relative left-[-100px]" src="/svg/singlebranch.svg" alt="blomster gren"> 
+    
+    <div class=" row-start-1 col-start-2 col-span-3 flex place-items-center lg:col-span-8 ">
+      <div class="h-[1px] w-72 lg:w-[120vh]  absolute right-0 bg-forrest-500"></div>
+    </div> 
+    </div>
 
 
   <!-- manedensbog  -->
@@ -284,12 +355,111 @@ import Card from "../components/Card.astro";
       <div class="">
       <p class="font-lemondejournal  text-forrest-500 text-p-desktop ">Månedens bog</p>
       <h2 class=" font-lemondejournal text-h2-mobil text-forrest-500  lg:text-h2-desktop ">A Dark and Drowning Tide</h2>
-      <p class="text-right text-p-mobil lg:text-p-desktop text-forrest-500">Af 
+      <p class="text-right text-p-mobil lg:text-p-desktop text-forrest-500">Af <br>
         Allison Saft</p>
+      </div>
     </div>
-  </div>
 
-   <!-- horizontal -->
+
+<section id="horizontal-bog" class="row-start-2 col-span-8">
+
+<section class="flex flex-col justify-start gap-xs">
+<img class="w-[30%]" src="/svg/bog.svg" alt="Månedens bog">
+
+  <div class="pl-s border-l border-forrest-500">
+    <h4 class="font-semibold text-forrest-500 text-h5-mobil lg:text-h5-desktop">
+      It was a painstakingly illustrated map of Brunnestaad
+    </h4>
+    <h6 id="" class="typewrite text-forrest-500 text-h6-mobil lg:text-h6-desktop  overflow-hidden">
+      and a work of art. Their young kingdom was vast and wheel-shaped, cradled
+      between two mountain ranges and bisected vertically by the River Vereist.
+      Heike had rendered it in shimmering black ink, with its vast network of
+      tributaries frittering off in shades of pale blue.
+    </h6>
+  </div>
+</section>
+
+
+
+<section class="flex flex-col items-end gap-xs">
+ 
+  
+    <div class="pl-s border-l border-forrest-500">
+      <h4 class="font-semibold text-forrest-500 text-h5-mobil lg:text-h5-desktop">
+        Lorelei Kaskel, a folklorist with a quick temper and an even quicker wit,
+      </h4>
+      <h6 id="" class="typewrite text-forrest-500 text-h6-mobil lg:text-h6-desktop  overflow-hidden">
+        is on an expedition with six eccentric nobles  in search of a fabled spring. The magical spring promises untold power,  which the king wants to harness to secure his reign of the embattled  country of Brunnestaad. Lorelei is determined to use this opportunity to prove herself and make her wildest, most impossible dream come to  become a naturalist, able to travel freely to lands she’s only ever read about.
+      </h6>
+    </div>
+
+    <img class="w-[20%]" src="/svg/flaskepost.svg" alt="Flaskepost">
+  </section>
+
+
+
+
+  <section class="grid grid-cols-3  text-center items-center justify-center">
+    <div class="col-start-1 col-span-3 flex flex-col justify-center items-center">
+ <div class="h-[2px] bg-forrest-500 w-full"></div>
+  <h5 class="text-h5-mobil lg:text-h5-desktop text-forrest-500 font-semibold ">“Nominee for Readers' Favorite Romantasy (2024)” <br> <br>“Goodreads Choice Award”</h5>
+<a href="https://www.bookinabox.dk/shop/?_gl=1*pukssy*_up*MQ..*_ga*MTgyNDM4ODkzOC4xNzM0NTIzMzIy*_ga_T9PHF2CMCZ*MTczNDUyMzMyMS4xLjAuMTczNDUyMzMyMS4wLjAuMTgyNTA3OTA2OQ.."><Button input="Gå til shop"></Button></a>
+</div>
+ <img class="col-start-3 row-start-1" src="/svg/dragon.svg" alt="Drage">
+  </section>
+  
+  <style>
+   .typewrite {
+  overflow: hidden; 
+ 
+  display: inline-block; 
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent; 
+  }
+}
+
+  
+
+  </style>
+  <script>
+   document.addEventListener("DOMContentLoaded", () => {
+  const typewriterElements = document.querySelectorAll(".typewrite"); // Hent alle elementer med klassen .typewrite
+
+  typewriterElements.forEach((typewriterElement) => {
+    const textContent = typewriterElement.textContent; // Gem teksten
+    typewriterElement.textContent = ""; // Tøm elementet for tekst
+
+    let index = 0; // Startposition
+
+    function typeText() {
+      if (index < textContent.length) {
+        typewriterElement.textContent += textContent[index]; // Tilføj næste tegn
+        index++;
+        setTimeout(typeText, 50); // Tidsinterval (juster for hastighed)
+      }
+    }
+
+    typeText(); // Start animationen for dette element
+  });
+});
+
+  </script>
+
+
+
+
+
+
+
+</section>
+
+    
+  
+
+   
 
 
 
@@ -335,8 +505,8 @@ import Card from "../components/Card.astro";
 
 
 <img class="absolute right-0" src="/svg/klub-blomst-t.svg" alt="Blomst">
-<img class="absolute right-0 top-[670%]" src="/svg/klub-blomst-m.svg" alt="Blomst">
-<img class="absolute right-48 top-[700%]"  src="/svg/klub-blomst-b.svg" alt="Blomst">
+<img class="absolute right-0 " src="/svg/klub-blomst-m.svg" alt="Blomst">
+<img class="absolute right-0 top-[1040%]"  src="/svg/klub-blomst-b.svg" alt="Blomst">
 
       <div  class="py-m grid mt-s grid-cols-grid-desktop gap-gap-desktop mx-margin-desktop font-lemondejournal">
 
@@ -389,19 +559,177 @@ import Card from "../components/Card.astro";
 </div>
 
 
-<a href="https://www.bookinabox.dk/shop/?_gl=1*pukssy*_up*MQ..*_ga*MTgyNDM4ODkzOC4xNzM0NTIzMzIy*_ga_T9PHF2CMCZ*MTczNDUyMzMyMS4xLjAuMTczNDUyMzMyMS4wLjAuMTgyNTA3OTA2OQ..">
-  <Button variant="secondary"></Button>
+<a class="col-start-1 row-start-3" href="https://www.bookinabox.dk/shop/?_gl=1*pukssy*_up*MQ..*_ga*MTgyNDM4ODkzOC4xNzM0NTIzMzIy*_ga_T9PHF2CMCZ*MTczNDUyMzMyMS4xLjAuMTczNDUyMzMyMS4wLjAuMTgyNTA3OTA2OQ..">
+  <Button input="Se mere" variant="secondary"></Button>
 </a>
 
 
-<!-- Divider -->
-    
-<div class="row-start-3 col-start-2 col-span-3 flex place-items-center lg:col-span-8 ">
-  <div class="h-[1px] w-72 lg:w-[150vh]  absolute right-0 bg-forrest-500"></div>
-</div> 
 
-<!-- branch  -->
-<img class=" col-start-1 lg:col-start-1  lg:col-span-3 lg:w-full row-start-3 relative -left-7 lg:left-[-100px]" src="/svg/singlebranch.svg" alt="blomster gren"> 
+    <!--  divider -->
+
+    <div class="hidden lg:flex row-start-4 col-start-1    ">
+<img class=" col-start-1  lg:col-span-3  row-start-3 relative -left-7 lg:left-[-100px]" src="/svg/singlebranch.svg" alt="blomster gren"> 
+
+<div class="row-start-3 col-start-2 col-span-3 flex place-items-center lg:col-span-8 ">
+  <div class="h-[1px] w-72 lg:w-[140vh]  absolute right-0 bg-forrest-500"></div>
+</div> 
+</div>
+
+<div class=" lg:hidden row-start-4 col-start-1    ">
+  <img class=" col-start-1  lg:col-span-3  row-start-3 relative -left-7 lg:left-[-100px]" src="/svg/singlebranch.svg" alt="blomster gren"> 
+  
+ 
 
      </section>
+
+  <!--  nyhedsbrev -->
+
+<section id="nyhedsbrev-m" class="lg:hidden flex flex-col gap-xs ">
+  <div class="grid mt-s grid-cols-grid-mobil  mx-margin-mobil lg:mx-margin-desktop gap-gap-mobil lg:gap-gap-desktop font-lemondejournal">
+<!-- h1 -->
+<div class="col-start-1 col-span-full   lg:pb-m flex flex-row justify-between items-center">
+  <div class="">
+  <p class="font-lemondejournal text-p-mobil text-forrest-500 col-span-4 lg:text-p-desktop lg:col-span-12">Nyhedsbrev</p>
+  <h2 class=" font-lemondejournal text-h2-mobil text-forrest-500 col-span-4 lg:text-h2-desktop lg:col-span-12">Modtag post</h2>
+  
+
+<div class="col-start-2 flex flex-col gap-xxs">
+  <p class="text-p-mobil text-forrest-500 text-right">Modtag nyhedsbrevet om nye <br> temaer, og særlig konkurrencer</p>
+  <p class="text-p-mobil text-forrest-500 text-right">Du kan til en hver tid afmelde det</p>
+</div>
+
+
+
+</div>
+</div>
+</div>
+ 
+
+
+<div class="col-span-full bg-maroon-500 w-full p-s">
+
+  <form class="natural-language-form flex flex-col place-items-start text-sage-500 font-lemondejournal">
+    <p class="text-p-mobil">
+      Jeg hedder 
+      <input 
+        type="text" 
+        name="name" 
+        placeholder="Jens Peter Jensen" 
+        class=" w-1/2 placeholder-cherry-500 text-cherry-500 border-none focus:outline-none focus:ring-0 bg-transparent" 
+        required 
+      /> 
+      og jeg vil gerne modtage Book in a Box nyhedsbrevet, fordi jeg elsker 
+      <input 
+        type="text" 
+        name="reason" 
+        placeholder="fantasy" 
+        class="w-1/2 p-0 placeholder-cherry-500  text-cherry-500 border-none focus:outline-none focus:ring-0 bg-transparent" 
+        required 
+      />
+    </p>
+    <p>
+      Min mail er: 
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="jensjensen@gmail.com" 
+        class="placeholder-forrest-500 text-forrest-500 border-none focus:outline-none focus:ring-0 bg-sage-500" 
+        required 
+      />.
+    </p>
+    <Button input="Tilmeld" variant="secondary"></Button>
+  </form>
+  
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section id="nyhedsbrev-d" class="hidden lg:flex flex-col gap-xs ">
+  <div class="grid  grid-cols-grid-desktop  mx-margin-desktop  gap-gap-desktop  font-lemondejournal">
+<!-- h1 -->
+<div class="col-start-1 col-span-full    flex flex-row justify-between items-center">
+  <div class="">
+  <p class="font-lemondejournal text-p-mobil text-forrest-500 col-span-4 lg:text-p-desktop lg:col-span-12">Nyhedsbrev</p>
+  <h2 class=" font-lemondejournal text-h2-mobil text-forrest-500 col-span-4 lg:text-h2-desktop lg:col-span-12">Modtag post</h2>
+  
+
+
+
+
+
+</div>
+</div>
+
+
+</div>
+ 
+
+<div class="grid mt-s grid-cols-grid-desktop   gap-gap-desktop  font-lemondejournal">
+
+  <div class="flex col-start-6 col-span-full text-left gap-xs">
+    <p class="text-p-mobil text-forrest-500 ">Modtag nyhedsbrevet om nye temaer, og særlige konkurrencer</p>
+    <p class="text-p-mobil text-forrest-500 ">Du kan til en hver til afmelde dig ved at bruge linket i bunden af nyhedsbrevet</p>
+  </div>
+<div class="flex items-center  col-start-2 col-span-full row-start-2">
+  <img class="" src="/svg/pigeon.svg" alt="Brevdue">
+</div>
+  
+
+<div class="col-start-5 col-span-full row-start-2 bg-maroon-500 p-s px-m">
+
+  <form class="natural-language-form flex flex-col gap-xs text-sage-500 font-lemondejournal">
+    <h3 class="text-h3-desktop text-sage-500 ">Tilmeld dig vores <br> nyhedsbrev</h3>
+    
+    <p class="text-p-desktop">
+      Jeg hedder 
+      <input 
+        type="text" 
+        name="name" 
+        placeholder="Jens Peter Jensen" 
+        class="text-p-desktop w-[180px] placeholder-cherry-500 text-cherry-500 border-none focus:outline-none focus:ring-0 bg-transparent" 
+        required 
+      /> 
+    
+    
+      og jeg vil gerne modtage Book in a Box <br> nyhedsbrevet, fordi jeg elsker 
+      <input 
+        type="text" 
+        name="reason" 
+        placeholder="fantasy" 
+        class="text-p-desktop w-1/2 p-0 placeholder-cherry-500  text-cherry-500 border-none focus:outline-none focus:ring-0 bg-transparent" 
+        required 
+      />
+   
+  </p>
+    <p class="text-p-desktop py-xxs">
+      Min mail er: 
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="jensjensen@gmail.com" 
+        class="text-p-desktop placeholder-forrest-500 text-forrest-500 border-none focus:outline-none focus:ring-0 bg-sage-500" 
+        required 
+      /> <br>
+    </p>
+    <p class="text-p-desktop">
+      Som modtager af vores nyhedsbrev bliver du en del af en læsefællesskab med over 2000 ligesindende
+    </p>
+    <Button input="Tilmeld" variant="secondary"></Button>
+  </form>
+  
+
+  </div>
+</div>
+</section>
+
 </MainLayout>
