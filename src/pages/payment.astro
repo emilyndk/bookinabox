@@ -10,27 +10,19 @@ const name = 'Astro';
 
 
 
-
-
-
 ---
 <MainLayout title="Titel">
 
-
 <!-- Oplysninger -->
-
 
 <section class="paymentFirst grid grid-cols-grid-mobil mx-margin-mobil gap-x-gap-mobil font-lemondejournal md:grid-cols-grid-desktop md:mx-margin-desktop md:gap-x-gap-desktop">
 
-
 <!-- Overskrift -->
-
 
 <div class="col-span-4 md:col-span-8">
 <div class="pt-s text-p-mobil text-forrest-500">
 Tilmeld
 </div>
-
 
 <div class="text-h2-mobil font-bold text-forrest-500 break-all">
 Oplysninger
@@ -38,257 +30,222 @@ Oplysninger
 </div>
 
 
-
-
 <!-- Breadcrumb -->
 
-
 <div class="mt-xs text-h6-mobil text-forrest-500 flex col-start-1 col-span-4 md:col-span-12 flex-row-reverse mb-s">
-   <div class="flex">
+    <div class="flex">
 <div class="font-bold">Oplysninger</div>
 <div class="items-center justify-center flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-   <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
- </svg>
- </div>
+    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+  </svg>
+  </div>
 <div>Betaling</div>
 <div class="items-center justify-center flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-   <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
- </svg>
- </div>
+    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+  </svg>
+  </div>
 <div>Bekræftelse</div>
 
-
 </div>
 </div>
-
-
-
 
 
 
 <!-- Formular -->
 
-
 <div class="col-span-4  md:col-span-4 md:mb-0 ">
 
-
-   <Formular label="Fornavn" input="Jens"></Formular>
-   <Formular label="Efternavn" input="Jensen"></Formular>
-   <Formular label="Mailadresse" input="Jensjensen@jensjensen.dk"></Formular>
+    <Formular label="Fornavn" input="Jens"></Formular>
+    <Formular label="Efternavn" input="Jensen"></Formular>
+    <Formular label="Mailadresse" input="Jensjensen@jensjensen.dk"></Formular>
 </div>
-
 
 <div class="col-span-4 md:mb-0 md:col-span-4">
-   <Formular label="Adresse" input="Jensensvej 1"></Formular>
-   <Formular label="Postnummer" input="1234"></Formular>
-   <Formular label="Bynavn" input="Jensensby"></Formular>
+    <Formular label="Adresse" input="Jensensvej 1"></Formular>
+    <Formular label="Postnummer" input="1234"></Formular>
+    <Formular label="Bynavn" input="Jensensby"></Formular>
 </div>
-
 
 <!-- Knap -->
 <div class="buttonFirst mb-l pt-s col-span-3 mt-xxs md:col-start-1">
-   <Button variant="primary" size="small" size></Button>
+    <Button variant="primary" size="small" size></Button>
 </div>
 
-
 </section>
-
 
 <!-- Betaling -->
 
-
 <section class="paymentSecond hidden grid grid-cols-grid-mobil mx-margin-mobil gap-x-gap-mobil font-lemondejournal md:grid-cols-grid-desktop md:mx-margin-desktop md:gap-x-gap-desktop">
-
 
 <!-- Overskrift -->
 
-
 <div class="col-span-4 md:col-span-8">
-   <div class="pt-s text-p-mobil text-forrest-500">
-   Tilmeld
-   </div>
-  
-   <div class="text-h2-mobil font-bold text-forrest-500 break-all">
-   Bekræftelse
-   </div>
-   </div>
-  
-  
-   <!-- Breadcrumb -->
-  
-   <div class="mt-xs text-h6-mobil text-forrest-500 flex col-start-1 col-span-4 md:col-span-12 flex-row-reverse mb-s">
-       <div class="flex">
-   <div class="">Oplysninger</div>
-   <div class="items-center justify-center flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-       <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-     </svg>
-     </div>
-   <div class="font-bold ">Betaling</div>
-   <div class="items-center justify-center flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-       <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-     </svg>
-     </div>
-   <div>Bekræftelse</div>
-  
-   </div>
-   </div>
-  
-  
-  
-   <!-- Formular -->
-       <div class="col-span-4  md:col-span-4 md:mb-0 ">
-       <Formular label="Kortindehavers fulde navn" input="Jens Jensen"></Formular>
-       <Formular label="Adresse" input="Jensensvej 1"></Formular>
-       <Formular label="Kontonummer" input="12345678"></Formular>
-   </div>
+    <div class="pt-s text-p-mobil text-forrest-500">
+    Tilmeld
+    </div>
+    
+    <div class="text-h2-mobil font-bold text-forrest-500 break-all">
+    Bekræftelse
+    </div>
+    </div>
+    
+    
+    <!-- Breadcrumb -->
+    
+    <div class="mt-xs text-h6-mobil text-forrest-500 flex col-start-1 col-span-4 md:col-span-12 flex-row-reverse mb-s">
+        <div class="flex">
+    <div class="">Oplysninger</div>
+    <div class="items-center justify-center flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+      </svg>
+      </div>
+    <div class="font-bold ">Betaling</div>
+    <div class="items-center justify-center flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+      </svg>
+      </div>
+    <div>Bekræftelse</div>
+    
+    </div>
+    </div>
+    
+    
+    
+    <!-- Formular -->
+        <div class="col-span-4  md:col-span-4 md:mb-0 ">
+        <Formular label="Kortindehavers fulde navn" input="Jens Jensen"></Formular>
+        <Formular label="Adresse" input="Jensensvej 1"></Formular>
+        <Formular label="Kontonummer" input="12345678"></Formular>
+    </div>
 <div class="col-span-4  md:col-span-4 md:mb-0 ">
-       <Formular label="Reg. Nummer" input="123"></Formular>
-       <Formular label="Postnummer" input="1234"></Formular>
-       <Formular label="Bynavn" input="Jensensby"></Formular>
+        <Formular label="Reg. Nummer" input="123"></Formular>
+        <Formular label="Postnummer" input="1234"></Formular>
+        <Formular label="Bynavn" input="Jensensby"></Formular>
 </div>
-       <!-- <div class="flex flex-col mt-xs text-forrest-500">
-           <label class="" for="fornavn">Kortindehavers fulde navn</label>
-       <input class="bg-opacity-50 bg-cherry-500" id="fornavn" type="text" placeholder="Jens Jensen">
-       </div>
-       <div class="flex flex-col mt-xs text-forrest-500">
-           <label class="" for="fornavn">Adresse</label>
-       <input class="bg-opacity-50 bg-cherry-500" id="fornavn" type="text" placeholder="Jensensvej 1">
-       </div>
-       <div class="flex flex-col mt-xs text-forrest-500 ">
-           <label class="" for="fornavn">Kontonummer</label>
-       <input class="bg-opacity-50 bg-cherry-500" id="fornavn" type="text" placeholder="12345678">
-       </div>
-       <div class="flex flex-col mt-xs text-forrest-500">
-           <label class="text-forrest-500" for="fornavn">Reg. nummer</label>
-       <input class="bg-opacity-50 bg-cherry-500" id="fornavn" type="text" placeholder="123">
-       </div>
-       <div class="flex flex-col mt-xs text-forrest-500">
-           <label class="" for="fornavn">Postnummer</label>
-       <input class="bg-opacity-50 bg-cherry-500" id="fornavn" type="text" placeholder="1234">
-       </div>
-       <div class="flex flex-col mt-xs text-forrest-500">
-           <label class="" for="fornavn">Bynavn</label>
-       <input class="bg-opacity-50 bg-cherry-500" id="fornavn" type="text" placeholder="Jensensby">
-       </div> -->
-  
+        <!-- <div class="flex flex-col mt-xs text-forrest-500">
+            <label class="" for="fornavn">Kortindehavers fulde navn</label>
+        <input class="bg-opacity-50 bg-cherry-500" id="fornavn" type="text" placeholder="Jens Jensen">
+        </div>
+        <div class="flex flex-col mt-xs text-forrest-500">
+            <label class="" for="fornavn">Adresse</label>
+        <input class="bg-opacity-50 bg-cherry-500" id="fornavn" type="text" placeholder="Jensensvej 1">
+        </div>
+        <div class="flex flex-col mt-xs text-forrest-500 ">
+            <label class="" for="fornavn">Kontonummer</label>
+        <input class="bg-opacity-50 bg-cherry-500" id="fornavn" type="text" placeholder="12345678">
+        </div>
+        <div class="flex flex-col mt-xs text-forrest-500">
+            <label class="text-forrest-500" for="fornavn">Reg. nummer</label>
+        <input class="bg-opacity-50 bg-cherry-500" id="fornavn" type="text" placeholder="123">
+        </div>
+        <div class="flex flex-col mt-xs text-forrest-500">
+            <label class="" for="fornavn">Postnummer</label>
+        <input class="bg-opacity-50 bg-cherry-500" id="fornavn" type="text" placeholder="1234">
+        </div>
+        <div class="flex flex-col mt-xs text-forrest-500">
+            <label class="" for="fornavn">Bynavn</label>
+        <input class="bg-opacity-50 bg-cherry-500" id="fornavn" type="text" placeholder="Jensensby">
+        </div> -->
+    
 
-
-  
-   <!-- Knap -->
-
+    
+    <!-- Knap -->
 
 <div class="buttonSecond mb-l pt-s col-span-3 md:col-start-1">
-   <Button variant="primary" size="small" size></Button>
+    <Button variant="primary" size="small" size></Button>
 </div>
-  
+    
 </section>
-
 
 <!-- Bekræftelse -->
 
-
 <section class="paymentThird hidden overflow-hidden max-w-full grid grid-cols-grid-mobil mx-margin-mobil gap-x-gap-mobil font-lemondejournal md:grid-cols-grid-desktop md:mx-margin-desktop md:gap-x-gap-desktop">
 
-
-   <!-- Overskrift -->
-  
-   <div class="col-span-4 md:col-span-12">
-       <div class="pt-s text-p-mobil text-forrest-500">
-       Tilmeld
-       </div>
-      
-       <div class="text-h2-mobil font-bold text-forrest-500 break-all">
-       Betaling
-       </div>
-       </div>
-      
-      
-       <!-- Breadcrumb -->
-      
-       <div class="mt-xs text-h6-mobil text-forrest-500 flex col-start-1 col-span-4 md:col-span-12 flex-row-reverse mb-s">
-           <div class="flex items-center justify-center">
-       <div class="">Oplysninger</div>
-       <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-           <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-         </svg>
-         </div>
-       <div>Betaling</div>
-       <div class="flex justify-center items-center align-middle"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-           <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-         </svg>
-         </div>
-       <div class="font-bold">Bekræftelse</div>
-      
-       </div>
-       </div>
-      
-      
-   <!-- Meddelelse -->
-
-
+    <!-- Overskrift -->
+    
+    <div class="col-span-4 md:col-span-12">
+        <div class="pt-s text-p-mobil text-forrest-500">
+        Tilmeld
+        </div>
+        
+        <div class="text-h2-mobil font-bold text-forrest-500 break-all">
+        Betaling
+        </div>
+        </div>
+        
+        
+        <!-- Breadcrumb -->
+        
+        <div class="mt-xs text-h6-mobil text-forrest-500 flex col-start-1 col-span-4 md:col-span-12 flex-row-reverse mb-s">
+            <div class="flex items-center justify-center">
+        <div class="">Oplysninger</div>
+        <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+          </svg>
+          </div>
+        <div>Betaling</div>
+        <div class="flex justify-center items-center align-middle"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+          </svg>
+          </div>
+        <div class="font-bold">Bekræftelse</div>
+        
+        </div>
+        </div>
+        
+        
+    <!-- Meddelelse -->
 
 
 <div class="pt-m text-h6-mobil font-bold col-span-4 md:col-span-6 text-forrest-500">
 Velkommen til Book in a Box!
 </div>
 <div class="text-p-mobil col-start-1 col-span-4 md:col-span-5 md:col-start-1 text-forrest-500   ">
-   Du er nu en del af Danmarks største fantasyfællesskab. Som medlem af Book in a Box, bliver du inviteret til vores Instagram gruppe, hvor du sammen med andre kan dele og fortælle om jeres oplevelser med månedens bog. Du vil meget snart have modtaget bekræftelse på din medlemsskab, såvel som et invitationslink til læsegruppen.
-   <br>
-   <br>
-   God læselyst!
-   <br>- Team Book in a Box
+    Du er nu en del af Danmarks største fantasyfællesskab. Som medlem af Book in a Box, bliver du inviteret til vores Instagram gruppe, hvor du sammen med andre kan dele og fortælle om jeres oplevelser med månedens bog. Du vil meget snart have modtaget bekræftelse på din medlemsskab, såvel som et invitationslink til læsegruppen. 
+    <br>
+    <br>
+    God læselyst! 
+    <br>- Team Book in a Box
 </div>
 
 
-
-
 <!-- billede -->
-<!-- <div class="invisible md:visible absoloute h-[20%] md:col-start-6 md:col-span-7 z-100">
-   <div class="ml-[14%] h-[360px] w-[700px]">
-   </div>
-</div> -->
+ <!-- <div class="invisible md:visible absoloute h-[20%] md:col-start-6 md:col-span-7 z-100">
+    <div class="ml-[14%] h-[360px] w-[700px]">
+    </div>
+ </div> -->
 
 
 
+        <!-- Knap -->
 
-
-
-       <!-- Knap -->
-
-
-    <a href="/" class="pt-s mb-l md:mb-40 col-span-3 md:col-start-1">
-       <Button variant="primary" size="small" size></Button>
-        </a>
-   </section>
-
+     <a href="/" class="pt-s mb-l md:mb-40 col-span-3 md:col-start-1">
+        <Button variant="primary" size="small" size></Button>
+         </a>
+    </section>
 
 </MainLayout>
 
-
 <script>
-   const paymentFirst = document.querySelector(".paymentFirst")
-   const paymentSecond = document.querySelector(".paymentSecond")
-   const paymentThird = document.querySelector(".paymentThird")
-  
-   const buttonFirst = document.querySelector(".buttonFirst")
-   const buttonSecond = document.querySelector(".buttonSecond")
-  
-   buttonFirst.addEventListener("click", () => {
-  
-       paymentFirst.classList.add("hidden")
-       paymentSecond.classList.remove("hidden")
-  
-   })
-   buttonSecond.addEventListener("click", () => {
-  
-       paymentThird.classList.remove("hidden")
-       paymentSecond.classList.add("hidden")
-  
-   })
-  
-   </script>
-
-
-
-
+    const paymentFirst = document.querySelector(".paymentFirst")
+    const paymentSecond = document.querySelector(".paymentSecond")
+    const paymentThird = document.querySelector(".paymentThird")
+    
+    const buttonFirst = document.querySelector(".buttonFirst")
+    const buttonSecond = document.querySelector(".buttonSecond")
+    
+    buttonFirst.addEventListener("click", () => {
+    
+        paymentFirst.classList.add("hidden")
+        paymentSecond.classList.remove("hidden")
+    
+    })
+    buttonSecond.addEventListener("click", () => {
+    
+        paymentThird.classList.remove("hidden")
+        paymentSecond.classList.add("hidden")
+    
+    })
+    
+    </script>
 
