@@ -5,7 +5,7 @@ import MainLayout from "../layouts/MainLayout.astro"
 
 <MainLayout title="Abonnement">
 
-<section class="font-lemondejournal grid grid-cols-grid-mobil mx-margin-mobil gap-x-gap-mobil lg:grid-cols-grid-desktop lg:mx-margin-desktop lg:gap-x-gap-desktop">
+<section class="font-lemondejournal grid grid-cols-grid-mobil mx-margin-mobil gap-x-gap-mobil lg:grid-cols-grid-desktop lg:mx-margin-desktop lg:gap-x-gap-desktop pt-l">
     <div class="col-start-1 col-span-4 text-forrest-500 lg:col-span-12 lg:pb-m">
         <p class="text-p-mobil text-forrest-500 col-span-4 lg:text-p-desktop lg:col-span-12">Tilmeld</p>
         <h1 class="text-h1-mobil text-forrest-500 col-span-4 break-all lg:text-h1-desktop lg:col-span-12">Vælg dit abonne- <br> ment</h1>
@@ -13,14 +13,18 @@ import MainLayout from "../layouts/MainLayout.astro"
     <p class="col-start-1 col-span-4 text-p-mobil text-end text-forrest-500 lg:text-p-desktop lg:col-start-9 lg:col-span-4">Som en del af Book in a Box, inviteres du med i vores fantastiske læseklub</p>
 
     <div class="col-start-3 col-end-11 hidden lg:block lg:pt-s">
-        <img src="/public/svg/card-desktop.svg" alt="card desktop">
+        <img src="/svg/card-desktop.svg" alt="card desktop">
     </div>
 
     <div class="col-start-3 col-end-11 hidden lg:block lg:pt-s">
-        <img src="/public/svg/card-desktop2.svg" alt="card desktop2">
+        <img src="/svg/card-desktop2.svg" alt="card desktop2">
     </div>
+
+</section>
     
 <!-- Opdeler streg -->
+
+<section class="font-lemondejournal grid grid-cols-grid-mobil gap-x-gap-mobil lg:grid-cols-grid-desktop lg:gap-x-gap-desktop ">
 
 <div class="col-start-1 col-span-3 flex place-items-center lg:col-span-8 lg:row-start-5">
   
@@ -32,17 +36,18 @@ import MainLayout from "../layouts/MainLayout.astro"
 
     <div class="col-start-4 lg:col-start-9 lg:row-start-5 lg:col-span-5">
 
-    <img class="col-start-4 lg:col-start-9 lg:row-span-3" src="/public/img/branch-down.svg" alt="blomster gren">
+    <img class="col-start-4 lg:col-start-9 lg:row-span-3" src="/img/branch-down.svg" alt="blomster gren">
     </div>
 
-
+</section>
+<section class="font-lemondejournal grid grid-cols-grid-mobil mx-margin-mobil gap-x-gap-mobil lg:grid-cols-grid-desktop lg:mx-margin-desktop lg:gap-x-gap-desktop" >
     <div class="col-start-1 col-span-4 text-center pt-s lg:hidden">
         <h5 class="text-h5-mobil text-forrest-500">BOOKS & GOODIES</h5>
         <h6 class="text-h6-mobil pb-xs text-cherry-500">Bog og 3 eksklusive gaver</h6>
     </div>
 
     <div class="col-start-1 col-span-4 lg:hidden">
-    <img src="/public/svg/card-mobile.svg" alt="card-mobil">
+    <img src="/svg/card-mobile.svg" alt="card-mobil">
     </div>
 
     <div class="col-start-1 col-span-4 text-center pt-s text-forrest-500 lg:hidden">
@@ -51,15 +56,20 @@ import MainLayout from "../layouts/MainLayout.astro"
     </div>
 
     <div class="col-start-1 col-span-4 lg:hidden">
-    <img src="/public/svg/card-mobil2.svg" alt="card-mobil2">
+    <img src="/svg/card-mobil2.svg" alt="card-mobil2">
     </div>
 </section>
 
 <!-- Opdeler streg -->
 
-<section class="grid grid-cols-grid-mobil gap-x-gap-mobil lg:hidden">
+<section class="grid grid-cols-grid-mobil gap-x-gap-mobil lg:hidden py-xs">
+
+    <div class="col-start-1">
+    
+        <img class="col-start-1" src="/svg/singlebranch.svg" alt="gren">
+        </div>
    
-    <div class="col-start-1 col-span-3 flex place-items-center">
+    <div class="col-start-2 col-span-3 flex place-items-center">
   
         <div class=" h-[1px] w-full bg-forrest-500 ">
     
@@ -67,10 +77,7 @@ import MainLayout from "../layouts/MainLayout.astro"
     
         </div>
 
-        <div class="col-start-4">
-    
-            <img class="col-start-4" src="/public/img/singlebranch.svg" alt="">
-            </div>
+       
     
 </section>
 
@@ -83,7 +90,7 @@ import MainLayout from "../layouts/MainLayout.astro"
     </div>
 
     <div class="col-start-1 col-span-4 text-forrest-500 lg:col-start-1 lg:col-span-6">
-    <img class="w-full h-[80%]" src="/public/img/pakke.webp" alt="pakke indhold">
+    <img class="w-full h-[80%]" src="/img/pakke.webp" alt="pakke indhold">
     <h6 class="text-h6-mobil lg:text-h6-desktop">A Dark and Drowning Tide</h6>
     <p class="text-p-mobil pb-s lg:text-p-desktop">af Allison Saft</p>
     </div>  
