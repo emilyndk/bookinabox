@@ -1,0 +1,73 @@
+---
+import Card from "./Card.astro"
+---
+
+<div class="relative overflow-hidden w-full">
+  <!--  container  -->
+  <div id="carousel" 
+  class="flex flex-row overflow-x-auto scroll-smooth snap-x snap-center py-8 px-[16px] sm:px-[40px]"
+>
+
+    <!-- cards -->
+    <div class="snap-center shrink-0 w-[400px]">
+      <a href="https://www.bookinabox.dk/shop/?_gl=1*pukssy*_up*MQ..*_ga*MTgyNDM4ODkzOC4xNzM0NTIzMzIy*_ga_T9PHF2CMCZ*MTczNDUyMzMyMS4xLjAuMTczNDUyMzMyMS4wLjAuMTgyNTA3OTA2OQ.." target="_blank">
+        <Card 
+          imgSrc="/img/book-img-1.jpg"
+          titel="A Dark and Drowning Tide"
+          forfatter="Alison Saft"
+          pris="280,-"
+        />
+      </a>
+    </div>
+    
+    
+    
+  </div>
+
+  
+</div>
+
+<script>
+ const carousel = document.querySelector("#carousel");
+
+
+function updateCardWidth() {
+  
+  return document.querySelector(".snap-center").clientWidth + 16; 
+}
+
+function scrollNext() {
+  const cardWidth = updateCardWidth();
+  const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+  
+  if (carousel.scrollLeft >= maxScroll) {
+    carousel.scrollTo({ left: 0, behavior: 'smooth' });
+  } else {
+    carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+  }
+}
+
+function scrollPrev() {
+  const cardWidth = updateCardWidth();
+  
+  if (carousel.scrollLeft <= 0) {
+    carousel.scrollTo({ left: carousel.scrollWidth, behavior: 'smooth' });
+  } else {
+    carousel.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+  }
+}
+
+
+
+
+ 
+</script>
+
+<style>
+
+/* Centering fix */
+.snap-center {
+  scroll-snap-align: center;
+}
+
+</style>

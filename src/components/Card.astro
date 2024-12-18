@@ -1,0 +1,11 @@
+---
+// Props modtages her
+const {forfatter, alt, pris, titel, url = "#", bgImg = "", imgSrc = "",  } = Astro.props;
+
+---
+<article>
+    {imgSrc && <img src={imgSrc} alt={alt || "Card Image"} class="card-image" />}
+    <h6 class="text-forrest-500 text-h6-mobil lg:text-h6-desktop font-lemondejournal">{titel}</h6>
+    <p class="text-forrest-500 text-p-mobil lg:text-p-desktop font-lemondejournal">{forfatter}</p>
+    <p class="text-forrest-500 text-h6-mobil lg:text-h6-desktop  font-lemondejournal">{pris}</p>
+</article>

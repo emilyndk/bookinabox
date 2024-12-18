@@ -4,6 +4,8 @@ import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
+import Karrusel from "../components/Karrusel.astro";
+import Card from "../components/Card.astro";
 ---
 
 <MainLayout title="Book in a Box">
@@ -329,12 +331,17 @@ import thumbsup from "../assets/images/thumbsup.png";
     </section>
 
       <!-- unikt fællesskab D -->
-<section id="fallesskab-d" class="hidden lg:block bg-forrest-500">
+<section id="fallesskab-d" class=" inset-0 bg-[url('/svg/klub-bg.svg')] bg-cover bg-no-repeat bg-right   hidden lg:block bg-forrest-500">
 
-      <div  class="grid mt-s grid-cols-grid-desktop gap-gap-desktop mx-margin-desktop font-lemondejournal">
+
+<img class="absolute right-0" src="/svg/klub-blomst-t.svg" alt="Blomst">
+<img class="absolute right-0 top-[670%]" src="/svg/klub-blomst-m.svg" alt="Blomst">
+<img class="absolute right-48 top-[700%]"  src="/svg/klub-blomst-b.svg" alt="Blomst">
+
+      <div  class="py-m grid mt-s grid-cols-grid-desktop gap-gap-desktop mx-margin-desktop font-lemondejournal">
 
  <!-- h1 -->
- <div class="mt-s col-start-1 col-span-7   flex flex-row justify-between items-center">
+ <div class="mt-s col-start-1 col-span-7 flex flex-row justify-between items-center">
   <div class="">
   <p class="font-lemondejournal  text-sage-500 text-p-desktop col-span-12">Et unikt fællesskab</p>
   <h2 class=" font-lemondejournal text-h2-mobil text-sage-500 col-span-4 lg:text-h2-desktop lg:col-span-12">Book in a box læseklub</h2>
@@ -362,4 +369,26 @@ import thumbsup from "../assets/images/thumbsup.png";
       </div>
 
     </section>
+
+
+     <!-- andre ting -->
+
+     <section id="andreting" class=" h-full grid mt-s grid-cols-grid-mobil lg:grid-cols-grid-desktop mx-margin-mobil lg:mx-margin-desktop gap-gap-mobil lg:gap-gap-desktop font-lemondejournal">
+
+ <!-- h1 -->
+ <div class="col-start-1 col-span-full   lg:pb-m flex flex-row justify-between items-center">
+  <div class="">
+  <p class="font-lemondejournal text-p-mobil text-forrest-500 col-span-4 lg:text-p-desktop lg:col-span-12">Webshop</p>
+  <h2 class=" font-lemondejournal text-h2-mobil text-forrest-500 col-span-4 lg:text-h2-desktop lg:col-span-12">Bøger og andre ting</h2>
+  
+</div>
+</div>
+
+<div class="col-start-1 col-span-full">
+<Karrusel></Karrusel>
+</div>
+
+
+<Button variant="secondary"></Button>
+     </section>
 </MainLayout>
