@@ -4,7 +4,7 @@ const {forfatter, alt, pris, titel, url = "#", bgImg = "", imgSrc = "",  } = Ast
 
 ---
 <article>
-    {imgSrc && <img src={imgSrc} alt={alt || "Card Image"} class="h-[300px] lg:h-[500px]" />}
+    {imgSrc && <img src={imgSrc} alt={alt || "Billede"} class="h-[300px] lg:h-[500px]" />}
     <h6 class="text-forrest-500 text-h6-mobil lg:text-h6-desktop font-lemondejournal">{titel}</h6>
     <p class="text-forrest-500 text-p-mobil lg:text-p-desktop font-lemondejournal">{forfatter}</p>
     <p class="text-forrest-500 text-h6-mobil lg:text-h6-desktop  font-lemondejournal">{pris}</p>
