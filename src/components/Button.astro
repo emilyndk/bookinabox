@@ -1,5 +1,5 @@
 ---
-const { variant= "primary", size = "regular" } = Astro.props;
+const { variant= "primary", size = "regular", input } = Astro.props;
 
 
 const buttonStyling = "text-sage-500 flex justify-center items-center align-middle";
@@ -17,11 +17,28 @@ const sizeClasses = {
 };
 ---
 <button class="buttonComponent" class:list={[buttonStyling, variantClasses[variant], sizeClasses[size]]}><slot />
-   <div class="z-10 absolute ">Indhold</div>
-   <svg id="vectorCherry" class=""  width="273" height="82" viewBox="0 0 273 82" fill="" xmlns="http://www.w3.org/2000/svg">
-       <path d="M272 14.5691V67.4308C265.666 68.0364 260.898 74.3499 260.506 81.8356H12.4941C12.1015 74.3499 7.33414 68.0364 1 67.4308V14.5691C7.33414 13.9635 12.1015 7.65003 12.4941 0.164307H260.506C260.898 7.65003 265.666 13.9635 272 14.5691Z" fill="#5B6C5D" stroke="#FBFDF7" stroke-width="2"/>
+   <div class="z-50 absolute "> {input} </div>
+   <svg id="" class="vectorCherry hidden md:block"  width="273" height="82" viewBox="0 0 273 82" xmlns="http://www.w3.org/2000/svg">
+       <path d="M272 14.5691V67.4308C265.666 68.0364 260.898 74.3499 260.506 81.8356H12.4941C12.1015 74.3499 7.33414 68.0364 1 67.4308V14.5691C7.33414 13.9635 12.1015 7.65003 12.4941 0.164307H260.506C260.898 7.65003 265.666 13.9635 272 14.5691Z" stroke="#FBFDF7" stroke-width="2"/>
        </svg>
+   <svg id="" class="vectorCherry block md:hidden"  width="182" height="56" viewBox="0 0 273 82" xmlns="http://www.w3.org/2000/svg">
+       <path d="M272 14.5691V67.4308C265.666 68.0364 260.898 74.3499 260.506 81.8356H12.4941C12.1015 74.3499 7.33414 68.0364 1 67.4308V14.5691C7.33414 13.9635 12.1015 7.65003 12.4941 0.164307H260.506C260.898 7.65003 265.666 13.9635 272 14.5691Z" stroke="#FBFDF7" stroke-width="2"/>
+       </svg>
+
+
    </button>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
