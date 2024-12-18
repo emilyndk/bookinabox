@@ -5,13 +5,20 @@ import '../styles/tailwind.css';
 import 'animate.css';
 const { title } = Astro.props;
 ---
-<html lang="en">
+<html lang="da">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Et bog abonnement for alle fantasy elskere. Fantasyboksen bliver sendt direkte hjem til dig hver 2. måned, hvor hele Book in a Box-fællesskabet modtager boksen samtidig, som vi går på opdagelse i sammen med læseplaner og read alongs. Bliv medlem i dag og oplev den magi, der venter dig med de bedste nyudgivne fantasyromaner og boglige goodies!">
 		<link rel="stylesheet" href="https://use.typekit.net/yqp1kki.css">
+		<!-- Open Graph tags -->
+		<meta property="og:title" content="Book in a Box">
+		<meta property="og:description" content="Besøg vores website og tilmeld dig et fantastisk bog abonnement for alle fantasy elskere">
+		<meta property="og:image" content="https://bookinabox.netlify.app/public/img/image.png">
+		<meta property="og:url" content="https://bookinabox.netlify.app/">
+		<meta property="og:type" content="website">
 		<title>{Astro.props.title}</title>
 	</head>
 	<body class="bg-sage-500">
