@@ -85,29 +85,29 @@ import Card from "../components/Card.astro";
   <section id="konceptet" class="mt-s grid grid-cols-grid-mobil lg:grid-cols-grid-desktop mx-margin-mobil lg:mx-margin-desktop gap-gap-mobil lg:gap-gap-desktop font-lemondejournal">
     
     <!-- h1 -->
-    <div class="col-start-1 col-span-4 lg:col-span-6  lg:pb-m">
+    <div class="col-start-1 col-span-4 lg:col-span-6  ">
       <p class="font-lemondejournal text-p-mobil text-forrest-500 col-span-4 lg:text-p-desktop lg:col-span-12">Konceptet</p>
       <h2 class="font-lemondejournal text-h2-mobil text-forrest-500 col-span-4 lg:text-h2-desktop lg:col-span-12">Sådan fungerer det</h2>
     </div>
 
     <!-- Horizontal Scroll -->
-    <div class=" -mt-10 h-[800px] overflow-scroll col-start-1  col-span-full scroll-smooth flex flex-row gap-[10rem]">
+    <div class="col-start-1  col-span-full ">
       
       <!-- trin 1 -->
-      <article id="trin-1" class=" flex flex-col justify-center items-center place-items-center ">
+      <section id="trin-1" class="h-screen flex flex-col  ">
         
-        <img class="w-1/2" src="/svg/typewriter.svg" alt="Skrivemaskine illustration">
-        <div class="border-l border-forrest-500 pl-s w-[300px]">
+        <img class="w-48" src="/svg/typewriter.svg" alt="Skrivemaskine illustration">
+        <div class="border-l border-forrest-500 pl-s ">
           <h3 class="text-forrest-500 text-h3-mobil lg:text-h3-desktop">1. Du bestiller</h3>
         <p class="text-p-mobil lg:text-p-desktop text-forrest-500">
           Du tilmelder dig Book In A Box gennem vores hjemmeside. Hver anden måned modtager du vores nøje udvalgte bog som en del af temaet. Skulle du have mod på mere, kan du også vælge at modtage ekstra gaver med i din pakke. Kunne det blive bedre?
         </p>
       </div>
-      </article>
+    </section>
 
 
        <!-- trin 2 -->
-       <article id="trin-2" class="flex flex-row  ">
+       <section id="trin-2" class=" h-screen flex flex-row  ">
        <div class="border-l border-forrest-500 pl-s h-1/2"> 
         <h3 class="text-forrest-500 text-h3-mobil lg:text-h3-desktop">2. Vi udvælger</h3>
         <p class="text-p-mobil lg:text-p-desktop text-forrest-500">
@@ -116,12 +116,12 @@ import Card from "../components/Card.astro";
         <img class="relative -bottom-16" src="/svg/singlebranch2.svg" alt="Gren">
       </div>
         <img class="w-1/2 " src="/svg/udvalg.svg" alt="Pige udvalger en bog illustration">
-      </article>
+    </section>
 
      
 
       <!-- trin 3 -->
-      <article id="trin-3" class="  ">
+      <section id="trin-3" class=" h-screen ">
         <div class="flex">
          <div class="flex flex-col items-center justify-center">
            <img class="" src="/svg/owl.svg" alt="Ugle med gave illustration">
@@ -134,7 +134,7 @@ import Card from "../components/Card.astro";
      
         <img src="/svg/singlebranch3.svg" alt="Gren">
       </div>
-      </article>
+    </section>
 
     </div>
 
@@ -389,6 +389,19 @@ import Card from "../components/Card.astro";
 </div>
 
 
-<Button variant="secondary"></Button>
+<a href="https://www.bookinabox.dk/shop/?_gl=1*pukssy*_up*MQ..*_ga*MTgyNDM4ODkzOC4xNzM0NTIzMzIy*_ga_T9PHF2CMCZ*MTczNDUyMzMyMS4xLjAuMTczNDUyMzMyMS4wLjAuMTgyNTA3OTA2OQ..">
+  <Button variant="secondary"></Button>
+</a>
+
+
+<!-- Divider -->
+    
+<div class="row-start-3 col-start-2 col-span-3 flex place-items-center lg:col-span-8 ">
+  <div class="h-[1px] w-72 lg:w-[150vh]  absolute right-0 bg-forrest-500"></div>
+</div> 
+
+<!-- branch  -->
+<img class=" col-start-1 lg:col-start-1  lg:col-span-3 lg:w-full row-start-3 relative -left-7 lg:left-[-100px]" src="/svg/singlebranch.svg" alt="blomster gren"> 
+
      </section>
 </MainLayout>
