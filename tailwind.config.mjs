@@ -67,7 +67,7 @@ export default {
          'h5-mobil': ['28.4px', { lineHeight: 'auto' }],
          'h6-mobil': ['21.3px', { lineHeight: 'auto' }],
          'p-mobil': ['16px', { lineHeight: 'auto' }],
-         'h1-display-desktop': ['150px', { lineHeight: '95px' }],
+         'h1-display-desktop': ['150px', { lineHeight: '120px' }],
          'h1-desktop': ['112.2px', { lineHeight: '112.2px' }],
          'h2-desktop': ['84.2px', { lineHeight: 'auto' }],
          'h3-desktop': ['63.2px', { lineHeight: 'auto' }],

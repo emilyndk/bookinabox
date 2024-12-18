@@ -8,78 +8,358 @@ import thumbsup from "../assets/images/thumbsup.png";
 
 <MainLayout title="Book in a Box">
   
-    
-    <!-- Background Image -->
-    <section id="hero-m" class="lg:hidden absolute inset-0 bg-[url('/svg/hero-blomster-samlet.svg')] bg-cover bg-center z-0 bg-forrest-500">
+  <!-- Hero Mobile Background -->
+  <section id="hero-m" class="h-screen lg:hidden inset-0 bg-[url('/svg/hero-blomster-samlet.svg')] bg-cover bg-center z-0 bg-forrest-500">
+    <!-- Main Content -->
+    <section class="grid grid-cols-grid-mobil mx-margin-mobil gap-gap-mobil font-lemondejournal">
       
-      <!-- Main Content -->
-      <section class=" grid grid-cols-grid-mobil  mx-margin-mobil gap-gap-mobil  font-lemondejournal">
-        
-        <!-- Hero Heading -->
-        <div class="mt-m flex col-span-4">
-          <h1 class="self-center text-center text-h1-mobil text-sage-500 ">
-            Book in a Box
-          </h1>
+      <!-- Heading -->
+      <div class="mt-m flex col-span-4">
+        <h1 class="self-center text-center text-h1-mobil text-sage-500">
+          Book in a Box
+        </h1>
+      </div>
+
+      <!-- Subtitle -->
+      <p class="mb-s text-p-mobil mx-7 col-start-1 col-span-4 text-sage-200 text-center">
+        Din abonnementsløsning for udvalgt fantasy spænding hver anden måned. Nøje udvalgt af vores redaktion.
+      </p>
+
+      <!-- Button -->
+      <button class="col-start-2 col-span-2 text-center bg-maroon-500 h-12">h</button>
+      <Button>Hej</Button>
+
+      <!-- Scroll Info -->
+      <div class="mt-s flex flex-col col-span-4 col-start-1 align-bottom">
+        <div class="flex items-center justify-center gap-2">
+          <p class="text-p-mobil text-center text-sage-200 lg:text-p-desktop opacity-50">
+            Scroll for yderligere info
+          </p>
+          <img src="/svg/arrow-m.svg" alt="Pil ned">
         </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Hero Desktop -->
+  <section id="hero-d" class="h-screen hidden lg:block inset-0 bg-[url('/svg/hero-blomster-samlet-d.svg')] bg-no-repeat bg-cover z-0 bg-forrest-500">
+    <img class="absolute right-0 top-[40%]" src="/svg/papirblomster-r.svg" alt="Blomster illustration">
+    <img class="absolute left-10 bottom-10" src="/svg/papirblomster-lb.svg" alt="Blomster illustration">
+    <img class="absolute left-10 top-10" src="/svg/papirblomster-lt.svg" alt="Blomster illustration">
+    <img class="absolute right-0 top-20" src="/svg/birdfill-maroon.svg" alt="Fugl illustration">
+
+    <!-- Main Content -->
+    <section class="grid grid-cols-grid-desktop mx-margin-desktop gap-gap-desktop font-lemondejournal">
+      <div class="absolute">
+        <button class="bg-maroon-400">hej</button>
+      </div>
+
+      <!-- Hero Heading -->
+      <div class="mt-[10rem] flex flex-col justify-center mb-s col-span-8 col-start-3 gap-s items-center">
+        <h1 class="self-center text-center text-h1-display-desktop text-sage-500 lg:text-h1-display-desktop">
+          Book in <br>a Box
+        </h1>
 
         <!-- Subtitle -->
-        <p class="mb-s text-p-mobil mx-7 col-start-1 col-span-4 text-sage-200  text-center">
-          Din abonnementsløsning for udvalgt fantasy spænding hver anden måned. Nøje udvalgt af vores redaktion.
+        <p class="text-h6-desktop self-center text-sage-200 text-center">
+          Din abonnementsløsning for udvalgt fantasy <br> spænding hver anden måned. Nøje udvalgt af <br> vores redaktion.
         </p>
 
         <!-- Buttons -->
         <button class="col-start-2 col-span-2 text-center bg-maroon-500 h-12">h</button>
-        <Button>Hej</Button>
 
         <!-- Scroll Info -->
-        <div class="mt-s flex flex-col col-span-4 col-start-1 align-bottom">
-          <div class="flex items-center justify-center gap-2">
-            <p class="text-p-mobil text-center text-sage-200 lg:text-p-desktop opacity-50">
-              Scroll for yderligere info
-            </p>
-            <img src="/svg/arrow-m.svg" alt="Pil ned">
-          </div>
+        <div class="flex flex-row gap-xxs">
+          <p class="text-p-mobil text-center text-sage-200 lg:text-p-desktop opacity-50">
+            Scroll for yderligere info
+          </p>
+          <img src="/svg/arrow-m.svg" alt="Pil ned">
         </div>
+      </div>
+    </section>
+  </section>
 
-      </section>
+  <!-- Konceptet Horizontal Scroll -->
+  <section id="konceptet" class="mt-s grid grid-cols-grid-mobil lg:grid-cols-grid-desktop mx-margin-mobil lg:mx-margin-desktop gap-gap-mobil lg:gap-gap-desktop font-lemondejournal">
+    
+    <!-- h1 -->
+    <div class="col-start-1 col-span-4 lg:col-span-6  lg:pb-m">
+      <p class="font-lemondejournal text-p-mobil text-forrest-500 col-span-4 lg:text-p-desktop lg:col-span-12">Konceptet</p>
+      <h2 class="font-lemondejournal text-h2-mobil text-forrest-500 col-span-4 lg:text-h2-desktop lg:col-span-12">Sådan fungerer det</h2>
+    </div>
+
+    <!-- Horizontal Scroll -->
+    <div class=" -mt-10 h-[800px] overflow-scroll col-start-1  col-span-full scroll-smooth flex flex-row gap-[10rem]">
+      
+      <!-- trin 1 -->
+      <article id="trin-1" class=" flex flex-col justify-center items-center place-items-center ">
+        
+        <img class="w-1/2" src="/svg/typewriter.svg" alt="Skrivemaskine illustration">
+        <div class="border-l border-forrest-500 pl-s w-[300px]">
+          <h3 class="text-forrest-500 text-h3-mobil lg:text-h3-desktop">1. Du bestiller</h3>
+        <p class="text-p-mobil lg:text-p-desktop text-forrest-500">
+          Du tilmelder dig Book In A Box gennem vores hjemmeside. Hver anden måned modtager du vores nøje udvalgte bog som en del af temaet. Skulle du have mod på mere, kan du også vælge at modtage ekstra gaver med i din pakke. Kunne det blive bedre?
+        </p>
+      </div>
+      </article>
+
+
+       <!-- trin 2 -->
+       <article id="trin-2" class="flex flex-row  ">
+       <div class="border-l border-forrest-500 pl-s h-1/2"> 
+        <h3 class="text-forrest-500 text-h3-mobil lg:text-h3-desktop">2. Vi udvælger</h3>
+        <p class="text-p-mobil lg:text-p-desktop text-forrest-500">
+          Vi udvælger i fællesskab på baggrund af nuværende trends indenfor fantasygenren og jeres meninger, bogen som sætter stemning for det valgte tema. Som en del af Book In A Box fællesskabet er du med til at skabe hvilken fortælling vi sammen skaber.
+        </p>
+        <img class="relative -bottom-16" src="/svg/singlebranch2.svg" alt="Gren">
+      </div>
+        <img class="w-1/2 " src="/svg/udvalg.svg" alt="Pige udvalger en bog illustration">
+      </article>
+
+     
+
+      <!-- trin 3 -->
+      <article id="trin-3" class="  ">
+        <div class="flex">
+         <div class="flex flex-col items-center justify-center">
+           <img class="" src="/svg/owl.svg" alt="Ugle med gave illustration">
+        <div class="border-l border-forrest-500 pl-s">
+          <h3 class="text-forrest-500 text-h3-mobil lg:text-h3-desktop">3. Du modtager</h3>
+        <p class="text-p-mobil lg:text-p-desktop text-forrest-500">
+          Vi har glæder os hver gang til at levere den nye pakke, med goodies, signeret bogcover og limited edition dustjacket - helt særligt til jer som en del af Book In A Box fællesskabet. Enjoy!</p>
+        </div>
+      </div>
+     
+        <img src="/svg/singlebranch3.svg" alt="Gren">
+      </div>
+      </article>
+
+    </div>
+
+   <!-- Divider -->
+    
+    <div class="row-start-3 col-start-2 col-span-3 flex place-items-center lg:col-span-8 ">
+      <div class="h-[1px] w-72 lg:w-[150vh]  absolute right-0 bg-forrest-500"></div>
+    </div> 
+    
+    <!-- branch  -->
+    <img class=" col-start-1 lg:col-start-1  lg:col-span-3 lg:w-full row-start-3 relative -left-7 lg:left-[-100px]" src="/svg/singlebranch.svg" alt="blomster gren"> 
+ 
+    
+  </section>
+
+
+
+  <!-- tilmeld -->
+  <section id="tilmeld" class=" mt-s grid grid-cols-grid-mobil lg:grid-cols-grid-desktop mx-margin-mobil lg:mx-margin-desktop gap-gap-mobil lg:gap-gap-desktop font-lemondejournal">
+
+     <!-- h1 -->
+     <div class="col-start-1 col-span-full   lg:pb-m flex flex-row justify-between items-center">
+      <div class="">
+      <p class="font-lemondejournal text-p-mobil text-forrest-500 col-span-4 lg:text-p-desktop lg:col-span-12">Tilmeld</p>
+      <h2 class="hidden lg:block font-lemondejournal text-h2-mobil text-forrest-500 col-span-4 lg:text-h2-desktop lg:col-span-12">Vælg dit <br> abonnement</h2>
+      <h2 class="lg:hidden font-lemondejournal text-h2-mobil text-forrest-500 col-span-4 ">Vælg din boks</h2>
+    </div>
+
+    <p class="hidden w-1/3 lg:block  text-center text-p-mobil lg:text-p-desktop text-forrest-500">Som en del af vores abonnement hos Book in a Box, inviteres du også med i vores fantastiske læseklub.
+      Læs mere om det når du tilmelder dig.</p>
+      <p class=" self-end lg:hidden text-center text-p-mobil lg:text-p-desktop text-forrest-500">Bliv en del af fællesskabet</p>
+    </div>
+    </div>
+
+   
+    <!-- tickets -->
+
+    <div id="tickets-m" class="lg:hidden col-span-full flex flex-col gap-s">
+
+<article id="exclusiv-m" class="flex flex-col justify-center text-center gap-xs">
+  <div class="">
+<h5 class="text-h5-mobil text-forrest-500 ">BOOK & GOODIES</h5>
+<h6 class="text-h6-mobil text-cherry-500">Bog og 3 eksklusive gaver</h6>
+</div>
+<a href="#"><img src="/svg/exclusiv-m.svg" alt="Book & Goodies card"></a>
+
+</article>
+
+<article id="bookonly-m" class="flex flex-col justify-center text-center gap-xs">
+  <div class="">
+<h5 class="text-h5-mobil text-forrest-500 ">BOOK ONLY</h5>
+<h6 class="text-h6-mobil text-forrest-500">Kun bog</h6>
+</div>
+<a href="#"><img src="/svg/bookonly-m.svg" alt="Book Only card"></a>
+
+<img class="w-1/2 absolute top-[460%] right-0" src="/svg/singlebranch4.svg" alt="Gren">
+
+</article>
+
+    </div>
+
+
+
+    <div id="tickets-d" class="hidden col-span-full lg:flex flex-col justify-center items-center gap-m">
+
+<article id="exclusiv-d" class="  overflow-hidden ">
+  <a href="#"><img class="overflow-hidden" src="/svg/exclusiv-d.svg" alt="Book & Goodies card"></a>
+
+</article>
+
+<article id="bookonly-d" class="  overflow-hidden">
+<a href="#"> <img class="" src="/svg/bookonly-d.svg" alt="Book only card"></a> 
+
+
+
+</article>
+
+
+
+    </div>
+    <img class="w-1/3 top-[420%] col-start-11 col-span-full absolute right-0" src="/svg/singlebranch4.svg" alt="Gren">
+
+
+  </section>
+
+<!-- hor andre M -->
+  <section id="horandre-m" class="lg:hidden mt-s grid grid-cols-grid-mobil  mx-margin-mobil  gap-gap-mobil font-lemondejournal">
+   
+   <!-- h1 -->
+    <div class="mt-s col-start-1 col-span-full flex flex-row justify-between items-center">
+      <div class="">
+      <p class="font-lemondejournal text-p-mobil text-forrest-500 col-span-4 ">Hvad folk siger om os</p>
+      <h2 class=" font-lemondejournal text-h2-mobil text-forrest-500 col-span-4 ">Hør andre</h2>
+      
+    </div>
+  </div>
+
+    <p class=" font-lemondejournal text-p-mobil text-forrest-500 col-span-4 ">“Jeg har netop modtaget min første boks og jeg er virkelig imponeret. Bogen er super flot og i fantastisk kvalitet og ideen med de små gaver, som skal åbnes på specifikke tidpunkter i bogen er virkelig sjov. Jeg glæder mig meget til at læse bogen og åbne gaverne.”</p>
+    <h5 class="col-start-2  text-right col-span-full  text-h5-mobil  text-forrest-500">Camilla Lysgaard Jensen</h5>
+
+    <div class="col-start-1 col-span-2 flex flex-col justify-center items-start">
+      <p class="text-p-mobil text-forrest-500">Hvad synes du?</p>
+      <button class="text-center">Giv din mening</button>
+      <img class=" col-start-1 lg:col-start-1  lg:col-span-3 lg:w-full row-start-3 relative -left-7 lg:left-[-100px]" src="/svg/singlebranch.svg" alt="blomster gren">
+    </div>
+  
+  </section>
+
+<!-- hor andre D -->
+
+  <section id="horandre-d" class="hidden lg:grid mt-s  grid-cols-grid-desktop mx-margin-desktop gap-gap-desktop font-lemondejournal">
+   
+    <!-- h1 -->
+     <div class="mt-s col-start-1 col-span-full   flex flex-row justify-between items-center">
+       <div class="">
+       <p class="font-lemondejournal  text-forrest-500 text-p-desktop col-span-12">Hvad folk siger om os</p>
+       <h2 class=" font-lemondejournal text-h2-mobil text-forrest-500 col-span-4 lg:text-h2-desktop lg:col-span-12">Hør andre</h2>
+       
+     </div>
+   </div>
+
+   <div class="flex col-start-2  col-span-full items-center justify-between gap-[300px]">
+ <div class="">
+     <p class="pl-s lg:border-l border-forrest-500 font-lemondejournal  text-forrest-500  text-p-desktop">“Jeg har netop modtaget min første boks og jeg er virkelig imponeret. Bogen er super flot og i fantastisk kvalitet og ideen med de små gaver, som skal åbnes på specifikke tidpunkter i bogen er virkelig sjov. Jeg glæder mig meget til at læse bogen og åbne gaverne.”</p>
+     <h5 class=" text-right col-span-full col-start-1 text-h5-desktop text-forrest-500">Camilla Lysgaard <br> Jensen</h5>
+    </div>
+     <img class="col-start-11 row-start-3" src="/svg/prinsesse.svg " alt="">
+    
+    </div>
+
+<div class="col-start-1 col-span-2 flex flex-col justify-center items-start">
+  <p class="text-p-desktop text-forrest-500">Hvad synes du?</p>
+  <button class="text-center">Giv din mening</button>
+  <img class=" col-start-1 lg:col-start-1  lg:col-span-3 lg:w-full row-start-3 relative -left-7 lg:left-[-100px]" src="/svg/singlebranch.svg" alt="blomster gren">
+</div>
+
+
+
+   </section>
+
+
+  <!-- manedensbog  -->
+   <section id="manedens" class="grid mt-s grid-cols-grid-mobil lg:grid-cols-grid-desktop mx-margin-mobil lg:mx-margin-desktop gap-gap-mobil lg:gap-gap-desktop font-lemondejournal">
+
+    <!-- h1 -->
+    <div class="mt-s col-start-1 col-span-full lg:col-span-6 ">
+      <div class="">
+      <p class="font-lemondejournal  text-forrest-500 text-p-desktop ">Månedens bog</p>
+      <h2 class=" font-lemondejournal text-h2-mobil text-forrest-500  lg:text-h2-desktop ">A Dark and Drowning Tide</h2>
+      <p class="text-right text-p-mobil lg:text-p-desktop text-forrest-500">Af 
+        Allison Saft</p>
+    </div>
+  </div>
+
+   <!-- horizontal -->
+
+
+
+  
+
+
+   </section>
+
+
+    <!-- unikt fællesskab M -->
+
+    <section id="fallesskab-m" class="lg:hidden bg-forrest-500 ">
+<div class="grid py-s mt-s grid-cols-grid-mobil gap-gap-mobil mx-margin-mobil font-lemondejournal">
+ <!-- h1 -->
+ <div class="col-start-1 col-span-4 lg:col-span-6  lg:pb-m">
+  <p class="text-p-mobil text-sage-500  ">Et unikt fællesskab</p>
+  <h2 class="text-h2-mobil text-sage-500  ">Del det med andre</h2>
+  </div>
+<div class="col-span-full pl-s border-l border-sage-500 flex flex-col gap-xs">
+  <p class=" text-p-mobil text-sage-500">Når du tilmelder dig et abonnement hos os, bliver du en del af vores eksklusive læseklub og kan være med når vi mødes online og taler om den bog vi er i gang med. Du kan se mere om kommende læseklub møder på vores Instagram og Facebook</p>
+
+  <div class="flex flex-col gap-xxs">
+  <div class="flex gap-xxs">
+    <a class="text-p-mobil  hover:text-cherry-500 transition-colors duration-300 ease-in-out text-sage-500" href="https://www.instagram.com/bookinaboxeu/">Følg os her</a>
+  <a href="https://www.instagram.com/bookinaboxeu/"><img src="/svg/instagram.svg" alt="Instagram"></a>
+  </div>
+<div class="flex gap-xxs">
+  <a class="text-p-mobil  hover:text-cherry-500 transition-colors duration-300 ease-in-out text-sage-500" href="https://www.facebook.com/p/Book-in-a-Box-100086607619791/">Eller her</a>
+<a href="https://www.facebook.com/p/Book-in-a-Box-100086607619791/"><img src="/svg/facebook.svg" alt="Facebook"></a>
+</div>
+
+</div>
+</div>
+
+
+</div>
+
+
     </section>
 
+      <!-- unikt fællesskab D -->
+<section id="fallesskab-d" class="hidden lg:block bg-forrest-500">
+
+      <div  class="grid mt-s grid-cols-grid-desktop gap-gap-desktop mx-margin-desktop font-lemondejournal">
+
+ <!-- h1 -->
+ <div class="mt-s col-start-1 col-span-7   flex flex-row justify-between items-center">
+  <div class="">
+  <p class="font-lemondejournal  text-sage-500 text-p-desktop col-span-12">Et unikt fællesskab</p>
+  <h2 class=" font-lemondejournal text-h2-mobil text-sage-500 col-span-4 lg:text-h2-desktop lg:col-span-12">Book in a box læseklub</h2>
+  
+</div>
+</div>
 
 
+<div class="col-span-4 row-start-2 pl-s border-l border-sage-500 flex flex-col gap-xs">
+  <p class=" text-p-desktop text-sage-500">Når du tilmelder dig et abonnement hos os, bliver du en del af vores eksklusive læseklub og kan være med når vi mødes online og taler om den bog vi er i gang med. Du kan se mere om kommende læseklub møder på vores Instagram og Facebook</p>
 
-	  <!-- Background Image -->
-	  <section id="hero-d" class=" hidden lg:block absolute inset-0 bg-[url('/svg/hero-blomster-samlet-d.svg')] bg-no-repeat bg-cover w-screen z-0 bg-forrest-500">
-      
-		<!-- Main Content -->
-		<section class=" grid grid-cols-grid-desktop  mx-margin-desktop gap-gap-desktop font-lemondejournal">
-		  
-		  <!-- Hero Heading -->
-		  <div class="mt-m flex col-span-4">
-			<h1 class="self-center text-center text-h1-mobil text-sage-500 lg:text-h1-display-desktop">
-			  Book in a Box
-			</h1>
-		  </div>
-  
-		  <!-- Subtitle -->
-		  <p class="mb-s text-p-mobil mx-7 col-start-1 col-span-4 text-sage-200 lg:text-p-desktop text-center">
-			Din abonnementsløsning for udvalgt fantasy spænding hver anden måned. Nøje udvalgt af vores redaktion.
-		  </p>
-  
-		  <!-- Buttons -->
-		  <button class="col-start-2 col-span-2 text-center bg-maroon-500 h-12">h</button>
-		  <Button>Hej</Button>
-  
-		  <!-- Scroll Info -->
-		  <div class="mt-s flex flex-col col-span-4 col-start-1 align-bottom">
-			<div class="flex items-center justify-center gap-2">
-			  <p class="text-p-mobil text-center text-sage-200 lg:text-p-desktop opacity-50">
-				Scroll for yderligere info
-			  </p>
-			  <img src="/svg/arrow-m.svg" alt="Pil ned">
-			</div>
-		  </div>
-  
-		</section>
-	  </section>
-  
+  <div class="flex flex-col gap-xxs ">
+  <div class="flex gap-xxs items-center">
+    <a class="text-p-desktop  hover:text-cherry-500 transition-colors duration-300 ease-in-out text-sage-500" href="https://www.instagram.com/bookinaboxeu/">Følg os her</a>
+  <a href="https://www.instagram.com/bookinaboxeu/"><img src="/svg/instagram.svg" alt="Instagram"></a>
+  </div>
+<div class="flex gap-xxs items-center">
+  <a class="text-p-desktop  hover:text-cherry-500 transition-colors duration-300 ease-in-out text-sage-500" href="https://www.facebook.com/p/Book-in-a-Box-100086607619791/">Eller her</a>
+<a href="https://www.facebook.com/p/Book-in-a-Box-100086607619791/"><img src="/svg/facebook.svg" alt="Facebook"></a>
+</div>
+
+</div>
+</div>
+
+      </div>
+
+    </section>
 </MainLayout>
