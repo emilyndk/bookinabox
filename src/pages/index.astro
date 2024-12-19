@@ -50,11 +50,11 @@ import Card from "../components/Card.astro";
 
 
  <!-- Hero Desktop -->
- <section id="hero-d" class="h-screen hidden lg:block inset-0 bg-[url('/svg/desktop-bg.svg')] bg-no-repeat bg-cover z-0 bg-forrest-500">
+ <section id="hero-d" class="h-screen hidden lg:block inset-0 bg-[url('/svg/desktop-bg.svg')] bg-no-repeat bg-cover z-0 bg-forrest-500 overflow-hidden">
    <img class="b-d absolute right-0 top-[40%]" src="/svg/papirblomster-r.svg" alt="Blomster illustration">
    <img class="b-d absolute left-52 bottom-10" src="/svg/papirblomster-lb.svg" alt="Blomster illustration">
    <img class="b-d absolute left-52 top-10" src="/svg/papirblomster-lt.svg" alt="Blomster illustration">
-   <img class="bird-d absolute right-0 top-20" src="/svg/birdfill-maroon.svg" alt="Fugl illustration">
+   <img class="bird-d overflow-hidden absolute right-4 top-20" src="/svg/birdfill-maroon.svg" alt="Fugl illustration">
 
 
    
@@ -124,7 +124,7 @@ import Card from "../components/Card.astro";
 <div class=" z-10 lg:-ml-[20rem] w-full contain-strict first-object col-start-1  lg:col-start-7 col-span-5 lg:col-span-7 row-start-1 sm:ml-l row-span-3 ">
   <section id="trin-1" class=" flex flex-col justify-center items-center  ">
       
- <img class="w-[40%] lg:w-48" src="/svg/typewriter.svg" alt="Skrivemaskine illustration">
+ <img class="typewriter w-[40%] lg:w-48" src="/svg/typewriter.svg" alt="Skrivemaskine illustration">
  <div class="border-l border-forrest-500 pl-s ">
    <h3 class="text-forrest-500 text-h3-mobil lg:text-h3-desktop">1. Du bestiller</h3>
  <p class="text-p-mobil lg:text-p-desktop text-forrest-500">
@@ -151,7 +151,7 @@ import Card from "../components/Card.astro";
   </p>
 
 </div>
-<img class="w-[40%] lg:w-[20%]" src="/svg/udvalg.svg" alt="Bibliotek">
+<img class="udvalg w-[40%] lg:w-[20%]" src="/svg/udvalg.svg" alt="Bibliotek">
  </section>
 <div class="w-full object-none h-full"></div> </div>
 <!-- tredje frame -->
@@ -159,7 +159,7 @@ import Card from "../components/Card.astro";
  <section id="trin-3" class=" ">
  <div class="flex">
   <div class="flex flex-col items-center justify-center">
-    <img class="w-[50%]" src="/svg/owl.svg" alt="Ugle med gave illustration">
+    <img class="owl w-[50%]" src="/svg/owl.svg" alt="Ugle med gave illustration">
  <div class="border-l border-forrest-500 pl-s">
    <h3 class="text-forrest-500 text-h3-mobil lg:text-h3-desktop">3. Du modtager</h3>
  <p class="text-p-mobil lg:text-p-desktop text-forrest-500">
@@ -349,7 +349,7 @@ import Card from "../components/Card.astro";
     <p id="" class="testimonial-p pl-s lg:border-l border-forrest-500 font-lemondejournal  text-forrest-500  text-p-desktop">“Jeg har netop modtaget min første boks og jeg er virkelig imponeret. Bogen er super flot og i fantastisk kvalitet og ideen med de små gaver, som skal åbnes på specifikke tidpunkter i bogen er virkelig sjov. Jeg glæder mig meget til at læse bogen og åbne gaverne.”</p>
     <h5 id="" class=" testimonial-forfatter text-right col-span-full col-start-1 text-h5-desktop text-forrest-500">Camilla Lysgaard <br> Jensen</h5>
    </div>
-    <img class="col-start-11 row-start-3" src="/svg/prinsesse.svg " alt="Prinsesse">
+    <img class="taarn col-start-11 row-start-3" src="/svg/prinsesse.svg " alt="Prinsesse">
    </div>
 
 
@@ -471,7 +471,7 @@ import Card from "../components/Card.astro";
   
   
      <section class="flex flex-col justify-end items-center gap-xs">
-     <img class="w-[30%]" src="/svg/bog.svg" alt="Månedens bog">
+     <img class=" bookshelf w-[30%]" src="/svg/bog.svg" alt="Månedens bog">
        <div class="pl-s border-l border-forrest-500">
          <h4 class="font-semibold text-forrest-500 text-h5-mobil lg:text-h5-desktop">
            It was a painstakingly illustrated map of Brunnestaad
@@ -500,7 +500,7 @@ import Card from "../components/Card.astro";
          is on an expedition with six eccentric nobles  in search of a fabled spring. The magical spring promises untold power,  which the king wants to harness to secure his reign of the embattled  country of Brunnestaad.
        </h6>
      </div>
-     <img class="w-[20%]" src="/svg/flaskepost.svg" alt="Flaskepost">
+     <img class="flaske w-[20%]" src="/svg/flaskepost.svg" alt="Flaskepost">
    </section>
   <div class="w-full object-none h-full"></div> </div>
  
@@ -514,7 +514,7 @@ import Card from "../components/Card.astro";
    <h5 class="text-h5-mobil lg:text-h5-desktop text-forrest-500 font-semibold ">“Nominee for Readers' Favorite Romantasy (2024)” <br> <br>“Goodreads Choice Award”</h5>
  <a href="https://www.bookinabox.dk/shop/?_gl=1*pukssy*_up*MQ..*_ga*MTgyNDM4ODkzOC4xNzM0NTIzMzIy*_ga_T9PHF2CMCZ*MTczNDUyMzMyMS4xLjAuMTczNDUyMzMyMS4wLjAuMTgyNTA3OTA2OQ.."><Button input="Gå til shop"></Button></a>
  </div>
-  <img class="col-start-3 row-start-1" src="/svg/dragon.svg" alt="Drage">
+  <img class="drage col-start-3 row-start-1" src="/svg/dragon.svg" alt="Drage">
    </section>
   </div> </div>
   
@@ -733,7 +733,7 @@ import Card from "../components/Card.astro";
 <div class="col-span-full bg-maroon-500 w-full p-s">
 
 
- <form name="nyhedsbrev" class="natural-language-form flex flex-col gap-xs place-items-start text-sage-500 font-lemondejournal" netlify>
+ <form name="nyhedsbrev" class="natural-language-form flex flex-col gap-xs place-items-start text-sage-500 font-lemondejournal">
    <p id="pl16" class="text-p-mobil">
      Jeg hedder
      <input
@@ -824,7 +824,7 @@ import Card from "../components/Card.astro";
    <p class="text-p-mobil text-forrest-500 ">Du kan til en hver til afmelde dig ved at bruge linket i bunden af nyhedsbrevet</p>
  </div>
 <div class="flex items-center  col-start-2 col-span-full row-start-2">
- <img class="" src="/svg/pigeon.svg" alt="Brevdue">
+ <img class="pigeon" src="/svg/pigeon.svg" alt="Brevdue">
 </div>
 
 
@@ -904,9 +904,16 @@ import Card from "../components/Card.astro";
 gsap.from("#hm-h", {opacity: 0,   x: -100,  stagger: 0.2, ease: "power2.out", duration: 0.8,})
 gsap.from(".b-d",  {opacity: 0, x: -100, scale: 0, delay: 0.4,  stagger: 0.06, ease: "power1.out", duration: 1.1,})
 gsap.from(".bird-d",  {opacity: 0, x: -40,   delay: 0.8,  stagger: 0.06, ease: "power1.out", duration: 1.1,})
+gsap.to(".bird-d",  { rotate: -4, repeat: -1, yoyo: true,   delay: 1.2, ease: "power1.out", duration: 1.1,})
 gsap.to("#scroll-arrow",  { y: -10,  delay: 0.8, ease: "power1.out", duration: 0.6, repeat: -1, yoyo: true,})
-
-
+gsap.to(".pigeon",  { rotate: 4, repeat: -1, yoyo: true,   delay: 1.2, ease: "power1.out", duration: 1.1,})
+gsap.to(".typewriter",  { scale: 1.05, repeat: -1, yoyo: true,   delay: 1.2, ease: "power1.out", duration: 1.1,})
+gsap.to(".bookshelf",  { rotate: -6, repeat: -1, yoyo: true,   delay: 1.2, ease: "power1.out", duration: 1.1,})
+gsap.to(".owl",  { y: 10, repeat: -1, yoyo: true,   delay: 1.2, ease: "power1.out", duration: 1.1,})
+gsap.to(".udvalg",  { rotate: 6, repeat: -1, yoyo: true,   delay: 1.2, ease: "power1.out", duration: 1.1,})
+gsap.to(".flaske",  { x: -8, repeat: -1, yoyo: true,   delay: 1.2, ease: "power1.out", duration: 1.1,})
+gsap.to(".drage",  { x: 4, y: -4, repeat: -1, yoyo: true,   delay: 1.2, ease: "power1.out", duration: 1.1,})
+gsap.to(".taarn",  { scale: 1.08 , repeat: -1, yoyo: true,   delay: 1.2, ease: "power1.out", duration: 1.1,})
 
 
 // nav
@@ -965,7 +972,7 @@ gsap.from("#card2",  {scrollTrigger:{trigger: "#card2", start: "top 90%", scrub:
  gsap.fromTo(".first-object, .first-text", {
  x: 0, opacity: 1
 }, {
- x: -1000, opacity: 1, duration: 1, ease: "power1.in", scrollTrigger: {
+ x: -1300, opacity: 1, duration: 1, ease: "power1.in", scrollTrigger: {
    trigger: "#scroll-1", scrub: true, start: "2%", end: "20%",
  }
 });
@@ -983,7 +990,7 @@ gsap.fromTo(".second-object, .second-text", {
 gsap.fromTo(".second-object, .second-text", {
  x: 0,
 }, {
- x: -1000, opacity: 0, duration: 1, ease: "power1.in", scrollTrigger: {
+ x: -1300, opacity: 0, duration: 1, ease: "power1.in", scrollTrigger: {
    trigger: "#scroll-1", scrub: true, start: "46%", end: "60%",
  }
 });
@@ -1002,7 +1009,7 @@ gsap.fromTo(".third-object, .third-text", {
 gsap.fromTo(".first-object1, .first-text1", {
  x: 0,
 }, {
- x: -1000, opacity: 1, duration: 1, ease: "power1.in", scrollTrigger: {
+ x: -1300, opacity: 1, duration: 1, ease: "power1.in", scrollTrigger: {
    trigger: "#scroll-2", scrub: true, start: "2%", end: "20%",
  }
 });
@@ -1020,7 +1027,7 @@ gsap.fromTo(".second-object1, .second-text1", {
 gsap.fromTo(".second-object1, .second-text1", {
  x: 0,
 }, {
- x: -1000, opacity: 0, duration: 1, ease: "power1.in", scrollTrigger: {
+ x: -1300, opacity: 0, duration: 1, ease: "power1.in", scrollTrigger: {
    trigger: "#scroll-2", scrub: true, start: "46%", end: "60%",
  }
 });
