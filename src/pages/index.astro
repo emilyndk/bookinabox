@@ -50,23 +50,16 @@ import Card from "../components/Card.astro";
 
 
  <!-- Hero Desktop -->
- <section id="hero-d" class="h-screen hidden lg:block inset-0 bg-[url('/svg/desktop-bg.svg')] bg-no-repeat bg-cover z-0 bg-forrest-500 overflow-hidden">
+ <section id="hero-d" class="font-lemondejournal h-screen hidden lg:block inset-0 bg-[url('/svg/desktop-bg.svg')] bg-no-repeat bg-cover z-0 bg-forrest-500 overflow-hidden">
    <img class="b-d absolute right-0 top-[40%]" src="/svg/papirblomster-r.svg" alt="Blomster illustration">
    <img class="b-d absolute left-52 bottom-10" src="/svg/papirblomster-lb.svg" alt="Blomster illustration">
    <img class="b-d absolute left-52 top-10" src="/svg/papirblomster-lt.svg" alt="Blomster illustration">
    <img class="bird-d overflow-hidden absolute right-4 top-20" src="/svg/birdfill-maroon.svg" alt="Fugl illustration">
 
 
-   
-   <section class="grid grid-cols-grid-desktop mx-margin-desktop gap-gap-desktop font-lemondejournal">
-     <div class="absolute right-10">
-      <a href="/tilmeld"><Button input="Abonnement" variant="primary"></Button></a>
-     </div>
-
-
      <!-- h1 -->
      <div class="mt-[10rem]  flex flex-col justify-center mb-s col-span-8 col-start-3 gap-xxs items-center">
-       <h1 id="hm-h" class="self-center text-center text-h1-display-desktop text-sage-500 lg:text-h1-display-desktop">
+       <h1 id="hm-h" class="self-center text-center text-h1-display-desktop text-sage-500 lg:text-h1-display-desktop lg:pb-xs">
          Book in <br>a Box
        </h1>
 
@@ -94,8 +87,11 @@ import Card from "../components/Card.astro";
 
 
 
-
-
+ <section class="lg:grid lg:grid-cols-grid-desktop lg:mx-margin-desktop lg:gap-gap-desktop font-lemondejournal sticky top-0 z-50">
+  <div class="absolute right-10 hidden lg:block">
+   <a href="/tilmeld"><Button input="Tilmeld mig" size="small" variant="primary"></Button></a>
+  </div>
+ </section>
 
  <section id="scroll-1" class="h-[640vh]">
   
@@ -914,6 +910,7 @@ gsap.to(".udvalg",  { rotate: 6, repeat: -1, yoyo: true,   delay: 1.2, ease: "po
 gsap.to(".flaske",  { x: -8, repeat: -1, yoyo: true,   delay: 1.2, ease: "power1.out", duration: 1.1,})
 gsap.to(".drage",  { x: 4, y: -4, repeat: -1, yoyo: true,   delay: 1.2, ease: "power1.out", duration: 1.1,})
 gsap.to(".taarn",  { scale: 1.08 , repeat: -1, yoyo: true,   delay: 1.2, ease: "power1.out", duration: 1.1,})
+gsap.to(".b-d",  { rotate: 4, repeat: -1, yoyo: true,   delay: 1.2, ease: "power1.out", duration: 1.1,})
 
 
 // nav
