@@ -142,7 +142,7 @@ import Card from "../components/Card.astro";
 
 
 <!-- andet frame -->
-<div class=" z-10  contain-strict second-object col-start-1 lg:col-start-2 col-span-8 row-start-1 row-span-3">
+<div class="opacity-0  z-10  contain-strict second-object col-start-1 lg:col-start-2 col-span-8 row-start-1 row-span-3">
  <section id="trin-2" class=" flex flex-col items-center   lg:items-center ">
  <div class="border-l border-forrest-500 pl-s h-1/2">
   <h3 class="text-forrest-500 text-h3-mobil lg:text-h3-desktop">2. Vi udvælger</h3>
@@ -155,7 +155,7 @@ import Card from "../components/Card.astro";
  </section>
 <div class="w-full object-none h-full"></div> </div>
 <!-- tredje frame -->
-<div class=" z-10 row-start-1  contain-strict third-object col-start-1 lg:col-start-2 col-span-7 md:row-start-1 row-span-3"> <div class="w-full object-none h-full">
+<div class="opacity-0  z-10 row-start-1  contain-strict third-object col-start-1 lg:col-start-2 col-span-7 md:row-start-1 row-span-3"> <div class="w-full object-none h-full">
  <section id="trin-3" class=" ">
  <div class="flex">
   <div class="flex flex-col items-center justify-center">
@@ -467,7 +467,7 @@ import Card from "../components/Card.astro";
     
    
          <!-- første frame -->
-  <div class=" z-10  contain-strict first-object lg:col-start-5 col-start-1 col-span-full lg:mr-[10rem] lg:col-span-7 row-start-1 row-span-3 ">
+  <div class=" z-10  contain-strict first-object1 lg:col-start-5 col-start-1 col-span-full lg:mr-[10rem] lg:col-span-7 row-start-1 row-span-3 ">
   
   
      <section class="flex flex-col justify-end items-center gap-xs">
@@ -490,7 +490,7 @@ import Card from "../components/Card.astro";
   </div>
   
   <!-- andet frame -->
-  <div class=" z-10  contain-strict second-object col-start-1 lg:col-start-6 col-span-7 row-start-2 lg:row-start-1 row-span-3 ">
+  <div class=" z-10 opacity-0 contain-strict second-object1 col-start-1 lg:col-start-6 col-span-7 row-start-2 lg:row-start-1 row-span-3 ">
    <section class="flex flex-col items-end gap-xs">
       <div class="pl-s border-l border-forrest-500">
        <h4 class="font-semibold text-forrest-500 text-h5-mobil lg:text-h5-desktop">
@@ -507,7 +507,7 @@ import Card from "../components/Card.astro";
  
  
   <!-- tredje frame -->
-  <div class=" z-10 row-start-1  contain-strict third-object col-start-1 lg:col-start-5 col-span-7 md:row-start-1 row-span-3"> <div class="w-full object-none h-full">
+  <div class=" z-10 row-start-1 opacity-0  contain-strict third-object1 col-start-1 lg:col-start-5 col-span-7 md:row-start-1 row-span-3"> <div class="w-full object-none h-full">
    <section class="grid grid-cols-3  text-center items-center justify-center">
      <div class="col-start-1 col-span-3 flex flex-col justify-center items-center">
   <div class="h-[2px] bg-forrest-500 w-full"></div>
@@ -972,7 +972,7 @@ gsap.from("#card2",  {scrollTrigger:{trigger: "#card2", start: "top 90%", scrub:
 
 
 gsap.fromTo(".second-object, .second-text", {
- x: 1000, opacity: 0, scale: 0,
+ x: 1000,
 }, {
  x: 0, opacity: 1, duration: 1, ease: "power1.in", scrollTrigger: {
    trigger: "#scroll-1", scrub: true, start: "4%", end: "30%",
@@ -981,7 +981,7 @@ gsap.fromTo(".second-object, .second-text", {
 
 
 gsap.fromTo(".second-object, .second-text", {
- x: 0, opacity: 1, scale: 1,
+ x: 0,
 }, {
  x: -1000, opacity: 0, duration: 1, ease: "power1.in", scrollTrigger: {
    trigger: "#scroll-1", scrub: true, start: "46%", end: "60%",
@@ -990,7 +990,7 @@ gsap.fromTo(".second-object, .second-text", {
 
 
 gsap.fromTo(".third-object, .third-text", {
- x: 1000, opacity: 0,
+ x: 1000,
 }, {
  x: 0, opacity: 1, duration: 1, ease: "power1.in", scrollTrigger: {
    trigger: "#scroll-1", scrub: true, start: "32%", end: "70%",
@@ -999,7 +999,7 @@ gsap.fromTo(".third-object, .third-text", {
 
 
 // For the second section
-gsap.fromTo(".first-object, .first-text", {
+gsap.fromTo(".first-object1, .first-text1", {
  x: 0,
 }, {
  x: -1000, opacity: 1, duration: 1, ease: "power1.in", scrollTrigger: {
@@ -1008,8 +1008,8 @@ gsap.fromTo(".first-object, .first-text", {
 });
 
 
-gsap.fromTo(".second-object, .second-text", {
- x: 1000, opacity: 0, scale: 0,
+gsap.fromTo(".second-object1, .second-text1", {
+ x: 1000,
 }, {
  x: 0, opacity: 1, duration: 1, ease: "power1.in", scrollTrigger: {
    trigger: "#scroll-2", scrub: true, start: "4%", end: "30%",
@@ -1017,8 +1017,8 @@ gsap.fromTo(".second-object, .second-text", {
 });
 
 
-gsap.fromTo(".second-object, .second-text", {
- x: 0, opacity: 1, scale: 1,
+gsap.fromTo(".second-object1, .second-text1", {
+ x: 0,
 }, {
  x: -1000, opacity: 0, duration: 1, ease: "power1.in", scrollTrigger: {
    trigger: "#scroll-2", scrub: true, start: "46%", end: "60%",
@@ -1026,8 +1026,8 @@ gsap.fromTo(".second-object, .second-text", {
 });
 
 
-gsap.fromTo(".third-object, .third-text", {
- x: 1000, opacity: 0,
+gsap.fromTo(".third-object1, .third-text1", {
+ x: 1000,
 }, {
  x: 0, opacity: 1, duration: 1, ease: "power1.in", scrollTrigger: {
    trigger: "#scroll-2", scrub: true, start: "32%", end: "70%",
