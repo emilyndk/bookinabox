@@ -51,9 +51,9 @@ import Card from "../components/Card.astro";
 
  <!-- Hero Desktop -->
  <section id="hero-d" class="font-lemondejournal h-screen hidden lg:block inset-0 bg-[url('/svg/desktop-bg.svg')] bg-no-repeat bg-cover z-0 bg-forrest-500 overflow-hidden">
-   <img class="b-d absolute right-0 top-[40%]" src="/svg/papirblomster-r.svg" alt="Blomster illustration">
-   <img class="b-d absolute left-52 bottom-10" src="/svg/papirblomster-lb.svg" alt="Blomster illustration">
-   <img class="b-d absolute left-52 top-10" src="/svg/papirblomster-lt.svg" alt="Blomster illustration">
+   <img class="b-d absolute right-4 top-[40%]" src="/svg/papirblomster-r.svg" alt="Blomster illustration">
+   <img class="b-d absolute left-52 right-4 bottom-10" src="/svg/papirblomster-lb.svg" alt="Blomster illustration">
+   <img class="b-d absolute left-52 right-4 top-10" src="/svg/papirblomster-lt.svg" alt="Blomster illustration">
    <img class="bird-d overflow-hidden absolute right-4 top-20" src="/svg/birdfill-maroon.svg" alt="Fugl illustration">
 
 
@@ -591,13 +591,13 @@ import Card from "../components/Card.astro";
 
 
      <!-- unikt fællesskab D -->
-<section id="fallesskab-d" class=" inset-0 bg-[url('/svg/klub-bg.svg')] bg-cover bg-no-repeat bg-right   hidden lg:block bg-forrest-500">
+<section id="fallesskab-d" class=" relative inset-0 bg-[url('/svg/klub-bg.svg')] bg-cover bg-no-repeat bg-right   hidden lg:block bg-forrest-500">
 
 
 
 
-<img  class="b-d2 absolute right-0" src="/svg/klub-blomst-t.svg" alt="Blomst">
-<img class="b-d2 absolute right-0 " src="/svg/klub-blomst-m.svg" alt="Blomst">
+<img  class="b-d2 absolute right-4" src="/svg/klub-blomst-t.svg" alt="Blomst">
+<img class="b-d2 absolute bottom-10 right-4 " src="/svg/klub-blomst-m.svg" alt="Blomst">
 
 
 
@@ -911,6 +911,7 @@ gsap.to(".flaske",  { x: -8, repeat: -1, yoyo: true,   delay: 1.2, ease: "power1
 gsap.to(".drage",  { x: 4, y: -4, repeat: -1, yoyo: true,   delay: 1.2, ease: "power1.out", duration: 1.1,})
 gsap.to(".taarn",  { scale: 1.08 , repeat: -1, yoyo: true,   delay: 1.2, ease: "power1.out", duration: 1.1,})
 gsap.to(".b-d",  { rotate: 4, repeat: -1, yoyo: true,   delay: 1.2, ease: "power1.out", duration: 1.1,})
+gsap.to(".b-d2",  { rotate: 4, repeat: -1, yoyo: true,   delay: 1.2, ease: "power1.out", duration: 1.1,})
 
 
 // nav
