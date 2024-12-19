@@ -60,7 +60,7 @@ import Card from "../components/Card.astro";
    
    <section class="grid grid-cols-grid-desktop mx-margin-desktop gap-gap-desktop font-lemondejournal">
      <div class="absolute right-10">
-      <a href="/tilmeld"><Button input="Tilmeld" variant="primary"></Button></a>
+      <a href="/tilmeld"><Button input="Abonnement" variant="primary"></Button></a>
      </div>
 
 
@@ -77,8 +77,8 @@ import Card from "../components/Card.astro";
        </p>
 
 
-       <!-- button -->
-     <a id="hm-h" href="/tilmeld"><Button input="Tilmeld" variant="primary"></Button></a>
+       <!-- Buttons -->
+     <a id="hm-h" href="/tilmeld"><Button input="Abonnement" variant="primary"></Button></a>
 
 
        <!-- Scroll  -->
@@ -243,17 +243,38 @@ import Card from "../components/Card.astro";
 
 
 
-  <div id="tickets-d" class="hidden col-span-full lg:flex flex-col justify-center items-center gap-m">
-    <article id="exclusiv-d card1" class="hover:scale-[1.05] transition-all  overflow-hidden ">
-      <a href="#"><img class="overflow-hidden" src="/svg/exclusiv-d.svg" alt="Book & Goodies card"></a>
-    </article>
-    <article id="bookonly-d card2" class="hover:scale-[1.05] transition-all overflow-hidden">
-      <a href="#"> <img class="" src="/svg/bookonly-d.svg" alt="Book only card"></a>
-    </article>
-  </div>
+   <div id="tickets-d" class="hidden col-span-full lg:flex flex-col justify-center items-center gap-m">
+
+
+<article id="exclusiv-d card1" class="hover:scale-[1.05] transition-all  overflow-hidden ">
+ <a href="/payment"><img class="overflow-hidden" src="/svg/exclusiv-d.svg" alt="Book & Goodies card"></a>
+
+
+</article>
+
+
+<article id="bookonly-d card2" class="hover:scale-[1.05] transition-all overflow-hidden">
+<a href="/payment"> <img class="" src="/svg/bookonly-d.svg" alt="Book only card"></a>
+
+
+
+
+
+
+</article>
+
+
+
+
+
+
+   </div>
  
-</section>
-<!-- tilmeld slut -->
+
+
+
+
+ </section>
 
 
  <!-- Opdeler streg -->

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base{
-    /* p{
-        @apply text-body;
-    } */
+    a, button{
+        @apply cursor-handcursor;
+    }
 }

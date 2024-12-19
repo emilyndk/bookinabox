@@ -8,7 +8,9 @@ export default {
 
 		extend: {
 
-
+      cursor: {
+        'handcursor': 'url(/filled.png) 25 25, pointer',
+      },
 
       keyframes: {
         typewriter: {
