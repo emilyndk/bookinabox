@@ -111,7 +111,7 @@ import Card from "../components/Card.astro";
  
  
         <!-- første frame -->
- <div class=" z-10  contain-strict first-object lg:col-start-2 col-span-7 row-start-1 row-span-3 ">
+ <div class=" z-10  contain-strict first-object lg:col-start-2 col-span-full lg:col-span-7 row-start-1 row-span-3 ">
   
   <section id="trin-1" class=" flex flex-col justify-center items-center  ">
         
@@ -304,11 +304,30 @@ import Card from "../components/Card.astro";
       <p class="text-p-mobil text-forrest-500">Hvad synes du?</p>
       
       <Button size="small" input="Giv din mening"></Button>
-      <img class=" col-start-1 lg:col-start-1  lg:col-span-3 lg:w-full row-start-3 relative -left-7 lg:left-[-100px]" src="/svg/singlebranch.svg" alt="blomster gren">
+      
     </div>
   
   </section>
 
+
+   
+<!-- Opdeler streg -->
+
+<section class="relative grid grid-cols-grid-mobil gap-x-gap-mobil lg:grid-cols-grid-desktop lg:gap-x-gap-desktop">
+  <div class="col-start-1 lg:col-start-1  lg:col-span-4">
+ 
+     <img class="col-start-1 lg:col-start-1 lg:col-span-4 lg:w-[85%]" src="/svg/singlebranch1.svg" alt="blomster gren">
+     </div>
+ 
+ 
+   <div class="col-start-2 col-span-4 flex place-items-center lg:col-start-5 lg:col-span-10">
+   
+     <div class=" h-[1px] w-full bg-forrest-500 ">
+ 
+     </div>
+ 
+     </div>
+ </section>
 <!-- hor andre D -->
 
   <section id="horandre-d" class="hidden lg:grid mt-s  grid-cols-grid-desktop mx-margin-desktop gap-gap-desktop font-lemondejournal">
@@ -441,7 +460,7 @@ import Card from "../components/Card.astro";
    
    
           <!-- første frame -->
-   <div class=" z-10  contain-strict first-object lg:col-start-2 col-span-7 row-start-1 row-span-3 ">
+   <div class=" z-10  contain-strict first-object lg:col-start-2 lg:col-span-7 row-start-1 row-span-3 ">
     
     
       <section class="flex flex-col justify-end items-center gap-xs">
