@@ -1,7 +1,7 @@
 ---
 ---
 <header id="header-d" class="hidden lg:flex pt-s gap-xs fixed left-0 top-0 h-full w-[168px] bg-forrest-600  flex-col items-center z-50">
-    <!-- Sticky Logo -->
+    <!-- logo -->
     <div id="logo-d" class="sticky top-4 cursor-pointer">
     <a href="/"><img src="/svg/logo-d-sage.svg" alt="Logo" class=" w-full"></a>
 </div>
@@ -9,15 +9,15 @@
     <h4 id="menu-d" class="cursor-pointer text-h4-desktop hover:text-cherry-500 transition-colors duration-300 ease-in-out text-sage-500 font-lemondejournal">Menu</h4>
   </header>
 
-  <!-- Slide-Out Menu -->
+  <!-- Slide Menu -->
   <div id="menu-overlay" 
   class="fixed left-0 top-0 w-0 h-full bg-forrest-500 overflow-hidden transition-all duration-500 ease-in-out z-40">
-  <!-- Menu Content -->
+  <!-- links -->
   <nav class="transition-all duration-300 ease-in-out h-full flex flex-col items-center gap-xs justify-center font-lemondejournal text-h2-desktop text-sage-500">
     <a href="/" class="relative right-40 text-sage-500 hover:text-cherry-500 transition-colors duration-300 ease-in-out">Hjem</a>
     <a href="/tilmeld" class="relative -right-40 text-sage-500 hover:text-cherry-500 transition-colors duration-300 ease-in-out">Abonnement</a>
     <a href="/omos" class="relative right-40 text-sage-500 hover:text-cherry-500 transition-colors duration-300 ease-in-out">Om os</a>
-    <a href="/kontakt" class="relative -right-40 text-sage-500 hover:text-cherry-500 transition-colors duration-300 ease-in-out ">Kontakt</a>
+    <a href="#footer" class="relative -right-40 text-sage-500 hover:text-cherry-500 transition-colors duration-300 ease-in-out ">Kontakt</a>
   </nav>
 </div>
 
@@ -59,26 +59,26 @@
       <img class="  w-full" src="/svg/logo-m-sage.svg" alt="Logo">
     </a>
 
-    <!-- Icons -->
+    <!-- icons -->
     <div class="  flex items-center gap-xxs">
-      <!-- Burger Icon -->
+      <!-- burger ikon -->
 
       <img id="burger-icon" src="/svg/burger-icon.svg" alt="">
      
-      <!-- Close Icon -->
+      <!-- Luk Ikon -->
       <img id="close-icon" class=" mixblend hidden cursor-pointer w-full" src="/svg/x-icon.svg" alt="Lukke ikon">
     </div>
   </div>
 </header>
 
   
-  <!-- Menu (Initially hidden) -->
+  <!-- Menu skjult M -->
   <div id="menu-m" class="h-screen top-0 bg-forrest-500 fixed w-screen z-40 hidden">
     <nav class="transition-all duration-300 ease-in-out h-full flex flex-col items-center gap-xs justify-center font-lemondejournal text-h3-mobil text-sage-500">
       <a href="/" class="text-sage-500 hover:text-cherry-500 transition-colors duration-300 ease-in-out">Hjem</a>
       <a href="/tilmeld" class="text-sage-500 hover:text-cherry-500 transition-colors duration-300 ease-in-out">Abonnement</a>
       <a href="/omos" class="text-sage-500 hover:text-cherry-500 transition-colors duration-300 ease-in-out">Om os</a>
-      <a href="/kontakt" class="text-sage-500 hover:text-cherry-500 transition-colors duration-300 ease-in-out">Kontakt</a>
+      <a href="#footer" class="text-sage-500 hover:text-cherry-500 transition-colors duration-300 ease-in-out">Kontakt</a>
     </nav>
   </div>
   
@@ -123,25 +123,25 @@
     const closeIcon = document.getElementById('close-icon');
     const menu = document.getElementById('menu-m');
   
-    // Toggle Menu visibility
+    // Toggle menus synlighed
     burgerIcon.addEventListener('click', () => {
       menu.classList.remove('hidden'); // Show menu
       burgerIcon.classList.add('hidden'); // Hide burger icon
       closeIcon.classList.remove('hidden'); // Show close icon
     });
   
-    // Close Menu when clicking on the close icon
+    // Luk menu trigger
     closeIcon.addEventListener('click', () => {
-      menu.classList.add('hidden'); // Hide menu
-      burgerIcon.classList.remove('hidden'); // Show burger icon
-      closeIcon.classList.add('hidden'); // Hide close icon
+      menu.classList.add('hidden'); // skjul menu
+      burgerIcon.classList.remove('hidden'); // viser burger ikon
+      closeIcon.classList.add('hidden'); // skjuler lukke ikon
     });
   
-    // Close menu if clicked outside the menu (optional)
+    
     document.addEventListener('click', (e) => {
       if (!menu.contains(e.target) && !burgerIcon.contains(e.target)) {
-        menu.classList.add('hidden'); // Hide menu
-        burgerIcon.classList.remove('hidden'); // Show burger icon
+        menu.classList.add('hidden'); // skjul menu
+        burgerIcon.classList.remove('hidden'); // visburger ikon
         closeIcon.classList.add('hidden'); // Hide close icon
       }
     });
