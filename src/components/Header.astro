@@ -52,23 +52,19 @@
 
 
 
-<header id="header-m" class=" fixed w-full top-0 lg:hidden block z-50 ">
+<header id="header-m" class="bg-forrest-600 fixed w-full top-0 lg:hidden block z-50 ">
   <div class="flex justify-between items-center px-s py-xxs">
     <!-- Logo -->
     <a href="/" class=" flex-shrink-0">
-      <img class=" mix-blend-difference w-full" src="/svg/logo-m-sage.svg" alt="Logo">
+      <img class="  w-full" src="/svg/logo-m-sage.svg" alt="Logo">
     </a>
 
     <!-- Icons -->
     <div class="  flex items-center gap-xxs">
       <!-- Burger Icon -->
-     <div id="burger-icon" class="flex justify-evenly flex-col  h-8 w-6">
-<div class="burgermenu w-6 h-1 bg-sage-500"></div>
-<div class="burgermenu2 w-6 h-1 bg-sage-500"></div>
-<div class="burgermenu3 w-6 h-1 bg-sage-500"></div>
 
-
-     </div>
+      <img id="burger-icon" src="/svg/burger-icon.svg" alt="">
+     
       <!-- Close Icon -->
       <img id="close-icon" class=" mixblend hidden cursor-pointer w-full" src="/svg/x-icon.svg" alt="Lukke ikon">
     </div>
@@ -90,31 +86,31 @@
 
 
 
-const burgermenu = document.querySelector(".burgermenu")
-const burgermenu2 = document.querySelector(".burgermenu2")
-const burgermenu3 = document.querySelector(".burgermenu3")
+// const burgermenu = document.querySelector(".burgermenu")
+// const burgermenu2 = document.querySelector(".burgermenu2")
+// const burgermenu3 = document.querySelector(".burgermenu3")
 
 
-window.onscroll = function() {navScroll()};
+// window.onscroll = function() {navScroll()};
 
 
-function navScroll() {
-if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-burgermenu.classList.add("bg-forrest-600");
-burgermenu.classList.remove("bg-sage-500");
-burgermenu2.classList.add("bg-forrest-600");
-burgermenu2.classList.remove("bg-sage-500");
-burgermenu3.classList.add("bg-forrest-600");
-burgermenu3.classList.remove("bg-sage-500");
-} else {
-burgermenu.classList.remove("bg-forrest-600");
-burgermenu.classList.add("bg-sage-500");
-burgermenu2.classList.remove("bg-forrest-600");
-burgermenu2.classList.add("bg-sage-500");
-burgermenu3.classList.remove("bg-forrest-600");
-burgermenu3.classList.add("bg-sage-500");
-}
-}
+// function navScroll() {
+// if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+// burgermenu.classList.add("bg-forrest-600");
+// burgermenu.classList.remove("bg-sage-500");
+// burgermenu2.classList.add("bg-forrest-600");
+// burgermenu2.classList.remove("bg-sage-500");
+// burgermenu3.classList.add("bg-forrest-600");
+// burgermenu3.classList.remove("bg-sage-500");
+// } else {
+// burgermenu.classList.remove("bg-forrest-600");
+// burgermenu.classList.add("bg-sage-500");
+// burgermenu2.classList.remove("bg-forrest-600");
+// burgermenu2.classList.add("bg-sage-500");
+// burgermenu3.classList.remove("bg-forrest-600");
+// burgermenu3.classList.add("bg-sage-500");
+// }
+// }
 
 
 
